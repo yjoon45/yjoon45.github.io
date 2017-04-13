@@ -1,6 +1,6 @@
 <script>
   function fetchMessaege () {
-    fetch('index.php?msg=Hello%20world').then(d => d.json()).then(ab => console.log(ab)).catch(err => err);
+    fetch('http://www.balajiholiday.in/api-practice/index.php?msg=Hello%20world').then(d => d.json()).then(ab => console.log(ab)).catch(err => err);
   }
   window.addEventListener('DOMContentLoaded', fetchMessaege, false);
 </script>
