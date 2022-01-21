@@ -1,0 +1,1022 @@
+html,body{
+    margin:0;
+    padding:0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Vampire Wars';
+    src: url('../fonts/Vampire Wars.eot');
+    src: url('../fontsVampire Wars.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vampire Wars.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'god-of-war';
+    src: url('../fonts/god-of-war.eot');
+    src: url('../fonts/god-of-war.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/god-of-war.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3.title{
+    font-family: 'Vampire Wars' !important;
+    font-size: 28px;
+    text-align: center;
+    background: rgb(251,238,46); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(251,238,46,1) 0%, rgba(172,96,34,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(251,238,46,1) 0%,rgba(172,96,34,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(251,238,46,1) 0%,rgba(172,96,34,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbee2e', endColorstr='#ac6022',GradientType=0 ); /* IE6-9 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+header{
+    padding: 30px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    @media(max-width:991px){
+        padding:15px 0;
+    }
+    .vs-nav.opennav{
+        @media(max-width:991px){
+            left: 0;
+            transition: all 0.5s;
+        }
+    }
+    .vs-nav{
+        margin-top: 20px;
+        .vs-m-block{
+            display: none;
+        }
+        @media(max-width:991px){
+            .vs-m-block{
+                display: block;
+                li{
+                    list-style-type: none;
+                    a.connectBtn{
+                        display: inline-block;
+                        padding: 5px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-family: 'Vampire Wars';
+                        text-decoration: none;
+                        border-radius: 60px;
+                        font-weight: 300;
+                        background: #fef42f;
+                        background: -webkit-gradient(linear, left top, left bottom, from(#fef42f), to(#9a401f));
+                        background: linear-gradient(to bottom, #fef42f 0%, #9a401f 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 );
+
+                        span{
+                            border: 3px solid #f4c50f;
+                            padding: 4px 12px;
+                            display: inline-block;
+                            border-radius: 60px;
+                            border: 3px solid -moz-linear-gradient(top, #fef42f 0%, #9a401f 100%);
+                            border: 3px solid -webkit-linear-gradient(top, #fef42f 0%, #9a401f 100%);
+                            border: 3px solid linear-gradient(to bottom, #fef42f 0%, #9a401f 100%);
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 );
+                        }
+                    }
+                    a.wallet{
+                        display: inline-block;
+                        padding: 8px 30px;
+                        border: 3px solid #fff;
+                        border-radius: 60px;
+                        margin-top: 12px;
+                        font-family: 'god-of-war';
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        @media(max-width:991px){
+            position: fixed;
+            width:100%;
+            height: 100vh;
+            left: -100%;
+            top: 0;
+            background: #000;
+            margin: 0;
+            z-index: 999;
+            overflow-y: auto;
+            padding:25px;
+            transition: all 0.5s;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            @media(max-width:991px){
+                margin-bottom: 25px;
+            }
+            li{
+                list-style-type: none;
+                display: inline-block;
+                margin-right:45px;
+                @media(max-width:1199px){
+                    margin-right: 25px;
+                    @media(max-width:991px){
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    font-family: 'Vampire Wars';
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 300;
+                    transition: all 0.5s;
+                    @media(max-width:1199px){
+                        font-size: 15px;
+                    }
+                    &:hover{
+                        color: #f4c50f;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .vs-logo{
+        position: absolute;
+        left: 50%;
+        top: 25px;
+        transform: translate(-50%);
+        img{
+            @media(max-width:991px){
+                width: 100%;
+                max-width: 130px;
+            }
+        }
+        @media(max-width:991px){
+            position: inherit;
+            transform: inherit;
+        }
+    }
+    .vs-headRight{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        @media(max-width:991px){
+            .vs-m-none{
+                display:none;
+            }
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+            a{
+                font-weight: 400;
+                color: #fff;
+                text-decoration: none;
+                img{
+                    width: 100%;
+                    max-width: 20px;
+                    display: inline-block;
+                    position: relative;
+                    top: -2px;
+                    margin-right: 2px;
+                }
+            }
+            a.connectBtn{
+                display: inline-block;
+                padding:5px;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: 'Vampire Wars';
+                border-radius:60px;
+                font-weight: 300;
+                background: #fef42f; /* Old browsers */
+                background: -moz-linear-gradient(top,  #fef42f 0%, #9a401f 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  #fef42f 0%,#9a401f 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  #fef42f 0%,#9a401f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 ); /* IE6-9 */
+                &:hover{
+                    background: #fef42f; /* Old browsers */
+                    background: -moz-linear-gradient(top,  #9a401f 0%, #fef42f 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top,  #9a401f 0%,#fef42f 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom,  #9a401f 0%,#fef42f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a401f', endColorstr='#fef42f',GradientType=0 ); /* IE6-9 */
+                }
+                span{
+                    border: 3px solid #f4c50f;
+                    padding:4px 12px;
+                    display: inline-block;
+                    border-radius: 60px;
+                    border: 3px solid -moz-linear-gradient(top,  #fef42f 0%, #9a401f 100%); /* FF3.6-15 */
+                    border: 3px solid -webkit-linear-gradient(top,  #fef42f 0%,#9a401f 100%); /* Chrome10-25,Safari5.1-6 */
+                    border: 3px solid linear-gradient(to bottom,  #fef42f 0%,#9a401f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 ); /* IE6-9 */
+                }
+
+            }
+            a.wallet{
+                display: inline-block;
+                padding: 8px 30px;
+                border: 3px solid #fff;
+                border-radius: 60px;
+                margin-left: 10px;
+                font-family: 'god-of-war';
+                font-weight: 400;
+            }
+        }
+        .vs-profileUser{
+            margin-left: 15px;
+            @media(max-width:991px){
+                display: flex;
+                align-items: center;
+            }
+            .vs-mobBtnNav{
+                display: none;
+                @media(max-width:991px){
+                    display: block;
+                    background-image: url('../images/menu.png');
+                    background-repeat: no-repeat;
+                    padding: 17px;
+                    background-size: 35px;
+                    transition: all 0.2s;
+                    margin-left: 40px;
+                }
+            }
+            .vs-mobBtnNav.close-nav{
+                @media(max-width:991px){
+                    position: fixed;
+                    right: 25px;
+                    top: 25px;
+                    z-index: 999;
+                    background-image: url('../images/close.png');
+                    background-repeat: no-repeat;
+                    padding: 17px;
+                    background-size: 25px;
+                    transition: all 0.2s;
+                }
+            }
+            .dropdown{
+                .dropdown-toggle{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    outline: none;
+                    border: none;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    &::after{
+                        display: block;
+                        color: #fff;
+                        margin-left: 10px;
+                        font-size: 24px;
+                    }
+                    img{
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+                .dropdown-menu{
+                    right: 0 !important;
+                    left: inherit !important;
+                    margin: 0 -26px !important;
+                    min-width: 100%;
+                    top: 53px !important;
+                    border-radius: 0;
+                    transform: inherit !important;
+                    padding: 0;
+                    li{
+                        width: 100%;
+                        a{
+                            color: #333;
+                            display: block;
+                            padding: 5px 15px;
+                            border-bottom: 1px solid #ddd;
+                            width: 100%;
+                            font-size: 14px;
+                            &:focus{
+                                background: #f2f2f2;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.vs-banner{
+    position: relative;
+    background: #080808;
+    img{
+        width: 100%;
+    }
+    video{
+        width: 100%;
+    }
+    .vs-banner-trigger {
+        position: absolute;
+        bottom: 0;
+        right: 1%;
+
+        button {
+            border: 1px solid transparent;
+            background: transparent;
+            color: #999;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            margin-right: 10px;
+
+            &::before {
+                position: absolute;
+                top: 48%;
+                left: 50%;
+                content: '';
+                display: block;
+                width: 3px;
+                height: 44px;
+                border-radius: 3px;
+                transform: translate(-50%, -50%) rotate(-55deg);
+                background: currentColor;
+                box-shadow: 0 0 0 2px black;
+            }
+        }
+
+        &.active .icon::before {
+            display: none;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+    }
+}
+.divBG{
+    background: url('../images/backgroung.jpg') no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    @media(max-width:767px){
+        background-size: cover;
+        background-position: 100%;
+    }
+}
+.vs-fluidMain{
+    padding: 50px 0 30px;
+    margin-top: 0;
+    .vs-mob-sizecol-md-4{
+        .col-md-4{
+            @media(max-width:767px){
+                width: 33%;
+                max-width: 33%;
+                .vs-aboutCols{
+                    .vs-about-no{
+                        font-size: 24px;
+                    }
+                    .vs-about-title{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .vs-aboutCols{
+        position: relative;
+        text-align: center;
+        padding: 30px 0;
+        &::after{
+            content: '';
+            background: url('../images/about-border.png') no-repeat;
+            position: absolute;
+            width: 67px;
+            height: 139px;
+            top: 0;
+            right: -50px;
+        }
+        .vs-about-no{
+            display: block;
+            font-weight: 600;
+            font-size: 34px;
+            font-family: 'god-of-war';
+        }
+        .vs-about-title{
+            font-size: 15px;
+            display: block;
+        }
+    }
+    .vs-aboutCols.end{
+        &::after{
+            display: none;
+        }
+    }
+    .vs-tokenomicsMain{
+        padding:80px 0 0;
+        .vs-tokenProgressBar{
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            .vs-tokenProgressBar-cols{
+                width: 100%;
+                border:2px solid #fff;
+                border-radius: 60px;
+                padding: 1px 0;
+                height:39px;
+                display: flex;
+                span{
+                    height: 33px;
+                    margin: 0 3px;
+                    display: inline-block;
+                    &:first-child{
+                        border-radius:30px 0 0 30px;
+                    }
+                    &:last-child{
+                        border-radius:0 30px 30px 0;
+                    }
+                }
+            }
+            .vs-tokenProgressBar-count{
+                display: flex;
+                padding: 30px 0 15px;
+                justify-content: space-between;
+                @media(max-width:767px){
+                    overflow-x: auto;
+                }
+                .count-no{
+                    line-height: 15px;
+                    @media(max-width:767px){
+                        min-width: 115px;
+                    }
+                    .Sbtitle{
+                        font-size: 17px;
+                        font-family: 'god-of-war';
+                    }
+                    .title{
+                        font-size:10px;
+                        color: #ababab;
+                        margin-left: -13px;
+                        @media(max-width:767px){
+                            white-space: nowrap;
+                        }
+                        small.dot{
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        .vs-tokenTable{
+            padding:30px 0;
+            position: relative;
+            @media(max-width:1199px){
+                overflow-x: auto;
+            }
+            table{
+                margin-bottom: 0;
+                border:none !important;
+                @media(max-width:1199px){
+                    width: 1000px;
+                }
+                tr{
+                    border-width: inherit;
+                    &:last-child{
+                        td{
+                            border-bottom: none;
+                            &:first-child{
+                                border-radius: 0 0 10px 10px;
+                            }
+                            &:nth-child(05){
+                                text-align: center;
+                                background: #df5c0c;
+                                border-left: none;
+                                border-right: none;
+                                border-bottom: none;
+                                border-radius: 0 0 8px 8px;
+                                outline: 2px solid #fff;
+                            }
+                        }
+                    }
+                    th{
+                        font-family: 'Vampire Wars';
+                        color: #df5c0c;
+                        font-weight: 300;
+                        border:none !important;
+                        font-size: 14px;
+                        padding: 15px 8px;
+                        border-bottom:3px dashed #919191 !important;
+                        &:last-child{
+                            padding-left: 40px;
+                        }
+                        &:nth-child(01){
+                            background: #222;
+                            width: 140px;
+                            border-radius: 8px 8px 0 0;
+                            @media(max-width:1199px){
+                                position: sticky;
+                                left: 0;
+                                z-index: 99;
+                            }
+                        }
+                        &:nth-child(02){
+                            padding-left: 30px;
+                        }
+                        &:nth-child(05){
+                            position: relative;
+                            z-index: 9;
+                            color: #fff;
+                            text-align: center;
+                            background: #df5c0c;
+                            border-radius: 8px 8px 0 0;
+                            outline: 2px solid #fff;
+                        }
+                        
+                    }
+                    td{
+                        color: #fff;
+                        border: none;
+                        border-bottom:3px dashed #919191;
+                        font-size: 13px;
+                        padding: 15px 8px;
+                        vertical-align: middle;
+                        white-space: nowrap;
+                        &:last-child{
+                            padding-left: 40px;
+                            span{
+                                display: block;
+                                width: 100%;
+                                font-size: 11px;
+                            }
+                        }
+                        &:nth-child(01){
+                            background: #222;
+                            width: 140px;
+                            font-family: 'Vampire Wars';
+                            text-align: center;
+                            color: #f4c50f;
+                            @media(max-width:1199px){
+                                position: sticky;
+                                left: 0;
+                                z-index: 99;
+                            }
+                        }
+                        &:nth-child(02){
+                            padding-left: 30px;
+                        }
+                        &:nth-child(03){
+                            width: 150px;
+                        }
+                        &:nth-child(04){
+                            width: 150px;
+                        }
+                        &:nth-child(05){
+                            width: 130px;
+                            position: relative;
+                            z-index: 9;
+                            background: #df5c0c;
+                            border-right: 2px solid #fff;
+                            border-left: 2px solid #fff;
+                            text-align: center;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+    .vs-codeCopyMain{
+        padding: 30px 0;
+        .vs-codeCopy-cols{
+            padding: 25px 40px;
+            border-radius: 10px;
+            background: rgb(149,59,31); /* Old browsers */
+            background: -moz-linear-gradient(top,  rgba(149,59,31,1) 0%, rgba(248,238,46,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(149,59,31,1) 0%,rgba(248,238,46,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(149,59,31,1) 0%,rgba(248,238,46,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#953b1f', endColorstr='#f8ee2e',GradientType=0 ); /* IE6-9 */
+            @media(max-width:767px){
+                padding:20px 15px;
+            }
+
+            .vs-vdsLogoCode{
+                text-align: center;
+                @media(max-width:767px){
+                    margin-bottom: 25px;
+                }
+                .sbTitle{
+                    font-family: 'god-of-war';
+                    font-size: 24px;
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 3px;
+                }
+            }
+            .vs-vdsCodeRight-txt{
+                .vs-copyCode-field{
+                    width: 100%;
+                    position: relative;
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        border:2px solid #fff !important;
+                        border-radius:8px;
+                        background-color: transparent;
+                        color: #fff;
+                        font-size: 18px;
+                        outline: none;
+                        box-shadow: none !important;
+                        padding-right: 60px;
+                    }
+                    .copyBtn{
+                        position: absolute;
+                        right: 15px;
+                        top:9px;
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .vs-copyCode-box{
+                    display: flex;
+                    margin-top: 20px;
+                    @media(max-width:480px){
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    .vs-copyCode-cols{
+                        width: 100%;
+                        border:2px solid #fff;
+                        text-align: center;
+                        border-radius:8px;
+                        padding: 20px 0;
+                        margin-right:30px;
+                        @media(max-width:767px){
+                            margin-right: 15px;
+                            @media(max-width:480px){
+                                width: 48%;
+                                margin-right: 0;
+                            }
+                        }
+                        &:last-child{
+                            margin-right:0;
+                            @media(max-width:480px){
+                                width: 100%;
+                                margin-top: 20px;
+                            }
+                        }
+                        .title{
+                            display: block;
+                            width: 100%;
+                            text-transform:uppercase;
+                            font-size:14px;
+                            font-weight: 500;
+                        }
+                        .vs-total{
+                            font-size:16px;
+                            font-weight: 600;
+                            span{
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .vs-ourTeamMain{
+        padding: 30px 0;
+        .vs-outTeamPd{
+            .col-md-4{
+                @media(max-width:991px){
+                    width: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                    @media(max-width:767px){
+                        width: 100%;
+                        flex: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .vs-ourTeam-cols{
+            display: flex;
+            position: relative;
+            padding: 150px 0 0;
+            @media(max-width:767px){
+                padding:30px 0 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .vs-ourTeam-img{
+                width: 100%;
+                max-width: 100px;
+                position: absolute;
+                left: 41px;
+                bottom: 50px;
+                z-index: 1;
+                @media(max-width:767px){
+                    position: inherit;
+                    left: inherit;
+                    bottom: inherit;
+                }
+                &::after{
+                    content: '';
+                    width: 100%;
+                    max-width: 80px;
+                    height: 80px;
+                    border-radius: 10px;
+                    background: #222;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 1;
+                }
+                img{
+                    position: relative;
+                    z-index: 9;
+                }
+                img.nv-rl-90{
+                    left: -90px;
+                    @media(max-width:767px){
+                        left: 0;
+                    }
+                }
+            }
+            .vs-ourTeam-text{
+                padding-left: 110px;
+                position: relative;
+                z-index: 9;
+                @media(max-width:767px){
+                    padding-left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                .title{
+                    font-family: 'Vampire Wars';
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 11px;
+                    line-height: 15px;
+                    margin: 0;
+                    width: 100%;
+                    max-width: 200px;
+                    @media(max-width:767px){
+                        margin: auto;
+                        max-width: 280px;
+                    }
+                }
+                span{
+                    color: #e7b710;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.vs-joinVigdisMain{
+    padding: 30px 0;
+    .vs-joinVigdis-cols{
+        width: 100%;
+        max-width: 700px;
+        border: 2px solid #f4c50f;
+        border-radius: 10px;
+        margin: auto;
+        padding: 25px 150px;
+        @media(max-width:767px){
+            padding:25px 15px;
+        }
+        .title{
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .vs-joinBtn{
+            text-align: center;
+            padding: 18px 0 25px;
+            a{
+                display: inline-block;
+                padding:5px 10px;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: 'Vampire Wars';
+                border-radius:60px;
+                font-weight: 300;
+                background: #fef42f; /* Old browsers */
+                background: -moz-linear-gradient(top,  #fef42f 0%, #9a401f 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  #fef42f 0%,#9a401f 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  #fef42f 0%,#9a401f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 ); /* IE6-9 */
+                &:hover{
+                    background: #fef42f; /* Old browsers */
+                    background: -moz-linear-gradient(top,  #9a401f 0%, #fef42f 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top,  #9a401f 0%,#fef42f 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom,  #9a401f 0%,#fef42f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a401f', endColorstr='#fef42f',GradientType=0 ); /* IE6-9 */
+                }
+                span{
+                    border: 3px solid #f4c50f;
+                    padding:10px 15px;
+                    display: inline-block;
+                    border-radius: 60px;
+                    border: 3px solid -moz-linear-gradient(top,  #fef42f 0%, #9a401f 100%); /* FF3.6-15 */
+                    border: 3px solid -webkit-linear-gradient(top,  #fef42f 0%,#9a401f 100%); /* Chrome10-25,Safari5.1-6 */
+                    border: 3px solid linear-gradient(to bottom,  #fef42f 0%,#9a401f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 ); /* IE6-9 */
+                }
+            }
+        }
+        .vs-joinSocial{
+            text-align: center;
+            a{
+                margin: 0 5px;
+                transition: all 0.5s;
+                &:hover{
+                    transition: all 0.5s;
+                    img{
+                        transition: all 0.5s;
+                        filter: grayscale(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vs-ourPartnerMain{
+    margin: 50px 0 0;
+    position: relative;
+    &::before{
+        content: '';
+        background: url('../images/line.png') no-repeat;
+        width: 100%;
+        height: 5px;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &::after{
+        content: '';
+        background: url('../images/line.png') no-repeat;
+        width: 100%;
+        height: 5px;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .vs-partnerCols{
+        padding:35px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        @media(max-width:767px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .title{
+            font-family: 'Vampire Wars';
+            @media(max-width:991px){
+                white-space: nowrap;
+                margin-right: 25px;
+            }
+        }
+        .vs-partnerBox{
+            @media(max-width:767px){
+                margin:10px 15px;
+            }
+            img{
+                width: 100%;
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+footer{
+    padding:10px 0;
+    background: #080808;
+    position: relative;   
+    &::before{
+        content: '';
+        background: url('../images/footer_bg.png') no-repeat;
+        width: 380px;
+        height: 600px;
+        background-size: 380px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.2;
+        @media(max-width:767px){
+            width: 200px;
+            height: 320px;
+            background-size: 200px;
+        }
+    } 
+    .container{
+        position: relative;
+        z-index: 9;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: 400;
+        line-height:28px;
+        @media(max-width:991px){
+            font-size: 15px;
+        }
+        span{
+            color: #f4c50f;
+        }
+    }
+    .vs-appDownload{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:50px 0;
+        @media(max-width:767px){
+            flex-wrap: wrap;
+            padding:20px 0;
+        }
+        .vs-appDownload-cols{
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            @media(max-width:767px){
+                margin:10px 0;
+            }
+            a{
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                border-radius:7px;
+                background: #19181c;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                transition: all 0.5s;
+                &:hover{
+                    background: #f4c50f;
+                    transition: all 0.5s;
+                }
+            }
+            span{
+                color: #bbbbbb;
+                font-size: 14px;
+                small{
+                    color: #605f5e;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .vs-copyright{
+        border-top: 1px solid #121212;
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding:20px 0 15px;
+        font-size: 12px;
+    }
+}
+
