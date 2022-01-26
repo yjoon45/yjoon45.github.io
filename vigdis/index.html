@@ -10,27 +10,38 @@
     <link href="css/custom.css" rel="stylesheet">
 </head>
 <header>
+    <a id="top"></a>
+    <div class="loader">
+        <video class="loader-embed" src="images/vigdis_logo_animation.mp4" autoplay muted></video>
+    </div>
+
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div class="vs-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Tokenomics</a></li>
-                    <li><a href="#">Staking</a></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tokenomics">Tokenomics</a></li>
+                    <li><a href="staking.html">Staking</a></li>
                 </ul>
                 <div class="vs-m-block">
-                    <li><a href="#" class="connectBtn"><span><img src="images/connect.png" alt=""> Connect</span></a>
-                    </li>
                     <li><a href="#" class="wallet"><img src="images/wallet.png" alt=""> 8.5K</a></li>
                 </div>
             </div>
             <div class="vs-logo">
                 <img src="images/logo.png" alt="">
             </div>
+            <li class="vs-mobileConnect-btn">
+                <a href="#" class="connectBtn" data-bs-toggle="modal" data-bs-target="#loginvigdis">
+                    <span><img src="images/connect.png" alt=""> Connect</span>
+                </a>
+            </li>
             <div class="vs-headRight">
                 <div class="vs-m-none">
-                    <li><a href="#" class="connectBtn"><span><img src="images/connect.png" alt=""> Connect</span></a>
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginvigdis" class="connectBtn">
+                            <span><img src="images/connect.png" alt=""> Connect</span>
+                        </a>
                     </li>
                     <li><a href="#" class="wallet"><img src="images/wallet.png" alt=""> 8.5K</a></li>
                 </div>
@@ -51,6 +62,7 @@
         </div>
     </div>
 </header>
+
 <section>
     <div class="vs-banner">
         <video autoplay loop muted>
@@ -79,18 +91,18 @@
                 Turn on volume
             </button>
         </div>
+        <img src="images/mobile-banner.jpg" class="vs-mobileBanner" alt="">
     </div>
 </section>
 
-<section class="divBG">
+<section class="divBG" id="about">
     <div class="vs-fluidMain">
         <div class="container">
             <h3 class="title">ABout Vigdis</h3>
-            <p class="text-center col-md-9 m-auto pb-4">Enter the world of The Game of Vigdis with official maps of the
-                Seven Kingdoms and
-                interactive family trees that capture the rich backgrounds of the characters ...Join the battle in Game
-                of Thrones Winter is Coming, R2games.com's new real-time strategy browser game. Play the role of an
-                ambitious Westeros lord, ...
+            <p class="text-center col-md-9 m-auto pb-4">
+                The Game of Vigdis is a play-to-earn, MMORPG strategy/fantasy game on the Avalanche blockchain.
+                The gameplay of GoV is similar to a traditional strategy game, the only difference is that GoV is
+                powered by blockchain technology and the VIGDIS or $VDS token.
             </p>
 
             <div class="col-md-8 m-auto vs-mob-sizecol-md-4">
@@ -118,7 +130,7 @@
         </div>
 
         <div class="container">
-            <div class="vs-tokenomicsMain">
+            <div class="vs-tokenomicsMain" id="tokenomics">
                 <h3 class="title">Tokenomics</h3>
                 <p class="text-center col-md-9 m-auto pb-4">
                     Vigdis (VDS)is a blockchain-based gaming platform that joins
@@ -298,8 +310,8 @@
                         <div class="col-md-8">
                             <div class="vs-vdsCodeRight-txt">
                                 <div class="vs-copyCode-field">
-                                    <input type="text" readonly value="0x4a741134EB3FcDcb4fe21f83E997B91c9a7Aef3f" name="" id=""
-                                        class="form-control">
+                                    <input class="token-address form-control" type="text" readonly
+                                        value="0x4a741134EB3FcDcb4fe21f83E997B91c9a7Aef3f">
                                     <button class="copyBtn">
                                         <img src="images/copy_icon.png" alt="">
                                     </button>
@@ -347,9 +359,10 @@
                                 <div class="vs-ourTeam-text">
                                     <div class="title">logino dujardin</div>
                                     <p>
-                                        This is a game changing project with clear vision and perfect plan how to build
-                                        a
-                                        bridge between blockchain and gaming.
+                                        Logino Dujardin was CEO for Safe Haven, an Asset Management and DeFi
+                                        company on the VeChain Network. Logino is co-founder of MoonLift Capital, a
+                                        venture capital and incubator on Binance Smart Chain and was advisor for
+                                        Vulcan Forged in the early days.
                                     </p>
                                     <span>Founder & CEO</span>
                                 </div>
@@ -363,7 +376,8 @@
                                 <div class="vs-ourTeam-text">
                                     <div class="title">Givano Verstraete</div>
                                     <p>
-                                        This is a game changing project with clear vision and perfect plan how to build
+                                        This is a game changing project with clear vision and perfect plan how to
+                                        build
                                         a bridge between blockchain and gaming.
                                     </p>
                                     <span>Co-founder & Social Media Manager</span>
@@ -378,8 +392,11 @@
                                 <div class="vs-ourTeam-text">
                                     <div class="title">Stijn Doom</div>
                                     <p>
-                                        This is a game changing project with clear vision and perfect plan how to build
-                                        a bridge between blockchain and gaming.
+                                        I founded several successful companies and worked for corporate entities
+                                        focussed on
+                                        logistics. Stijn has the experience and knowledge to bring Vigdis to the
+                                        next level
+                                        and will work as Business & Growth.
                                     </p>
                                     <span>Co-founder & Business Growth</span>
                                 </div>
@@ -393,8 +410,9 @@
                                 <div class="vs-ourTeam-text">
                                     <div class="title">Parveen sharma</div>
                                     <p>
-                                        This is a game changing project with clear vision and perfect plan how to build
-                                        a bridge between blockchain and gaming.
+                                        With over 10 years in the industry, working with some of the best agencies
+                                        and the worlds biggest household Names. Excited to be the part of "Vigdis".
+                                        Every beginning is a new challenge. I welcome the challenges.
                                     </p>
                                     <span>Creative Head</span>
                                 </div>
@@ -408,10 +426,27 @@
                                 <div class="vs-ourTeam-text">
                                     <div class="title">Yogesh kumar</div>
                                     <p>
-                                        This is a game changing project with clear vision and perfect plan how to build
+                                        This is a game changing project with clear vision and perfect plan how to
+                                        build
                                         a bridge between blockchain and gaming.
                                     </p>
                                     <span>Front End Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="vs-ourTeam-cols">
+                                <div class="vs-ourTeam-img">
+                                    <img src="images/team_6.png" alt="">
+                                </div>
+                                <div class="vs-ourTeam-text">
+                                    <div class="title">Nail Haikal</div>
+                                    <p>
+                                        This is a game changing project with clear vision and perfect plan how to
+                                        build
+                                        a bridge between blockchain and gaming.
+                                    </p>
+                                    <span>Character Designer</span>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +468,7 @@
                     </div>
                     <div class="vs-joinSocial">
                         <a href="#"><img src="images/facebbok.png" title="Facebbok" alt=""></a>
-                        <a href="#"><img src="images/telegram.png" title="Telegram" alt=""></a>
+                        <a href="#"><img src="images/discord.png" title="Discord" alt=""></a>
                         <a href="#"><img src="images/twitter.png" title="Twitter" alt=""></a>
                     </div>
                 </div>
@@ -464,6 +499,28 @@
     </div>
 </section>
 
+<!-- login-start -->
+
+<div class="modal fade vs-loginModalMain" id="loginvigdis" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="vs-metaLogo">
+                <img src="images/meta_login.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h4>To CONTINUE ON THIS WEBSITE</h4>
+                <div class="text-center">
+                    <a class="login-trigger" href="#">login with metamask</a>
+                </div>
+                <p>You are always in control on Riot Racers when using MetaMask.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- end -->
+
 <footer>
     <div class="container">
         <h4 class="text-center col-md-7 m-auto">
@@ -486,32 +543,10 @@
     </div>
 </footer>
 
-
-<body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#sdhmob-nav').click(function () {
-                $('.vs-nav').toggleClass('opennav');
-                $('.vs-mobBtnNav').toggleClass('close-nav');
-            });
-
-            $('.vs-banner-trigger').on('click', function () {
-                var $elm = $('.vs-banner video').get(0);
-
-                if ($elm.muted) {
-                    $elm.muted = false;
-                    $(this).addClass('active');
-                } else {
-                    $elm.muted = true;
-                    $(this).removeClass('active');
-                }
-            });
-        });
-    </script>
-
+    <script src="js/metamask-onboarding.bundle.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

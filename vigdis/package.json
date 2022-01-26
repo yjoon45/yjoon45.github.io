@@ -1,0 +1,22 @@
+{
+  "name": "vigdis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloksoni31/vigdis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aloksoni31/vigdis/issues"
+  },
+  "homepage": "https://github.com/aloksoni31/vigdis#readme",
+  "dependencies": {
+    "@metamask/onboarding": "^1.0.1"
+  }
+}
