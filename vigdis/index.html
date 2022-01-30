@@ -1,532 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vigdis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-</head>
-<body>
-    <a id="top"></a>
-    <div class="loader" hidden>
-        <video class="loader-embed" src="images/vigdis_logo_animation.mp4" autoplay muted></video>
-    </div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
 
+  <body>
     <header>
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="vs-nav">
-                    <ul>
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#tokenomics">Tokenomics</a></li>
-                        <li><a href="staking.html">Staking</a></li>
-                    </ul>
-                    <div class="vs-m-block">
-                        <li>
-                            <a href="#" class="connectBtn" data-bs-toggle="modal" data-bs-target="#loginvigdis">
-                                <span><img src="images/connect.png" alt="">Connect wallet</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="wallet"><img src="images/wallet.png" alt=""> <span>8.5K</span></a>
-                        </li>
-                    </div>
-                </div>
-                <div class="vs-logo">
-                    <img src="images/logo.png" alt="">
-                </div>
-                <div class="vs-headRight">
-                    <ul class="wallet-list vs-m-none">
-                        <li>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#loginvigdis" class="connectBtn">
-                                <span><img src="images/connect.png" alt=""> Connect wallet</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+      <a id="top"></a>
+      <div class="loader">
+        <video
+          class="loader-embed"
+          src="images/vigdis_logo_animation.mp4"
+          autoplay
+          muted
+        ></video>
+      </div>
+
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="vs-nav">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#tokenomics">Tokenomics</a></li>
+              <li><a href="staking.html">Staking</a></li>
+            </ul>
+            <!-- <div class="vs-m-block">
+              <li>
+                <a href="#" class="wallet"
+                  ><img src="images/wallet.png" alt="" /> 8.5K</a
+                >
+              </li>
+            </div> -->
+          </div>
+          <div class="vs-logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <li class="vs-mobileConnect-btn">
+            <a
+              href="#"
+              class="connectBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#loginvigdis"
+            >
+              <span><img src="images/connect.png" alt="" /> Connect</span>
+            </a>
+          </li>
+          <div class="vs-headRight">
+            <div class="vs-m-none">
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginvigdis"
+                  class="connectBtn"
+                >
+                  <span
+                    ><img src="images/connect.png" alt="" /> Connect
+                    wallet</span
+                  >
+                </a>
+              </li>
+              <!-- <li>
+                <a href="#" class="wallet"
+                  ><img src="images/wallet.png" alt="" /> 8.5K</a
+                >
+              </li> -->
             </div>
+            <div class="vs-profileUser">
+              <!-- <div class="dropdown">
+                <button
+                  class="dropdown-toggle"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="images/user.png" alt="" />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">View Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+              </div> -->
+              <div class="vs-mobBtnNav" id="sdhmob-nav"></div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <section>
-        <div class="vs-banner">
-            <video autoplay loop muted>
-                <source src="images/Vigdis_Header_Final.mp4" type="video/mp4">
-                <source src="images/Vigdis_Header_Final.ogg" type="video/ogg">
-            </video>
-            <div class="vs-banner-trigger d-none d-md-block">
-                <button>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                            <g xmlns="http://www.w3.org/2000/svg">
-                                <path d="M46.547,75.521c0,1.639-0.947,3.128-2.429,3.823c-0.573,0.271-1.187,0.402-1.797,0.402c-0.966,0-1.923-0.332-2.696-0.973
-                                l-23.098-19.14H4.225C1.892,59.635,0,57.742,0,55.409V38.576c0-2.334,1.892-4.226,4.225-4.226h12.303l23.098-19.14
-                                c1.262-1.046,3.012-1.269,4.493-0.569c1.481,0.695,2.429,2.185,2.429,3.823L46.547,75.521L46.547,75.521z M62.784,68.919
-                                c-0.103,0.007-0.202,0.011-0.304,0.011c-1.116,0-2.192-0.441-2.987-1.237l-0.565-0.567c-1.482-1.479-1.656-3.822-0.408-5.504
-                                c3.164-4.266,4.834-9.323,4.834-14.628c0-5.706-1.896-11.058-5.484-15.478c-1.366-1.68-1.24-4.12,0.291-5.65l0.564-0.565
-                                c0.844-0.844,1.975-1.304,3.199-1.231c1.192,0.06,2.305,0.621,3.061,1.545c4.977,6.09,7.606,13.484,7.606,21.38
-                                c0,7.354-2.325,14.354-6.725,20.24C65.131,68.216,64.007,68.832,62.784,68.919z M80.252,81.976
-                                c-0.764,0.903-1.869,1.445-3.052,1.495c-0.058,0.002-0.117,0.004-0.177,0.004c-1.119,0-2.193-0.442-2.988-1.237l-0.555-0.555
-                                c-1.551-1.55-1.656-4.029-0.246-5.707c6.814-8.104,10.568-18.396,10.568-28.982c0-11.011-4.019-21.611-11.314-29.847
-                                c-1.479-1.672-1.404-4.203,0.17-5.783l0.554-0.555c0.822-0.826,1.89-1.281,3.115-1.242c1.163,0.033,2.263,0.547,3.036,1.417
-                                c8.818,9.928,13.675,22.718,13.675,36.01C93.04,59.783,88.499,72.207,80.252,81.976z"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    Turn on volume
-                </button>
+      <div class="vs-banner">
+        <video autoplay loop muted>
+          <source src="images/Vigdis_Header_Final.mp4" type="video/mp4" />
+          <source src="images/Vigdis_Header_Final.ogg" type="video/ogg" />
+        </video>
+        <div class="vs-banner-trigger">
+          <button>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <g xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M46.547,75.521c0,1.639-0.947,3.128-2.429,3.823c-0.573,0.271-1.187,0.402-1.797,0.402c-0.966,0-1.923-0.332-2.696-0.973
+                            l-23.098-19.14H4.225C1.892,59.635,0,57.742,0,55.409V38.576c0-2.334,1.892-4.226,4.225-4.226h12.303l23.098-19.14
+                            c1.262-1.046,3.012-1.269,4.493-0.569c1.481,0.695,2.429,2.185,2.429,3.823L46.547,75.521L46.547,75.521z M62.784,68.919
+                            c-0.103,0.007-0.202,0.011-0.304,0.011c-1.116,0-2.192-0.441-2.987-1.237l-0.565-0.567c-1.482-1.479-1.656-3.822-0.408-5.504
+                            c3.164-4.266,4.834-9.323,4.834-14.628c0-5.706-1.896-11.058-5.484-15.478c-1.366-1.68-1.24-4.12,0.291-5.65l0.564-0.565
+                            c0.844-0.844,1.975-1.304,3.199-1.231c1.192,0.06,2.305,0.621,3.061,1.545c4.977,6.09,7.606,13.484,7.606,21.38
+                            c0,7.354-2.325,14.354-6.725,20.24C65.131,68.216,64.007,68.832,62.784,68.919z M80.252,81.976
+                            c-0.764,0.903-1.869,1.445-3.052,1.495c-0.058,0.002-0.117,0.004-0.177,0.004c-1.119,0-2.193-0.442-2.988-1.237l-0.555-0.555
+                            c-1.551-1.55-1.656-4.029-0.246-5.707c6.814-8.104,10.568-18.396,10.568-28.982c0-11.011-4.019-21.611-11.314-29.847
+                            c-1.479-1.672-1.404-4.203,0.17-5.783l0.554-0.555c0.822-0.826,1.89-1.281,3.115-1.242c1.163,0.033,2.263,0.547,3.036,1.417
+                            c8.818,9.928,13.675,22.718,13.675,36.01C93.04,59.783,88.499,72.207,80.252,81.976z"
+                  ></path>
+                </g>
+              </svg>
             </div>
+            Turn on volume
+          </button>
         </div>
+        <img src="images/mobile-banner.jpg" class="vs-mobileBanner" alt="" />
+      </div>
     </section>
 
     <section class="divBG" id="about">
-        <div class="vs-fluidMain">
-            <div class="container">
-                <h3 class="title">ABout Vigdis</h3>
-                <p class="text-center col-md-9 m-auto pb-4">
-                    The Game of Vigdis is a play-to-earn, MMORPG strategy/fantasy game on the Avalanche blockchain.
-                    The gameplay of GoV is similar to a traditional strategy game, the only difference is that GoV is
-                    powered by blockchain technology and the VIGDIS or $VDS token.
-                </p>
+      <div class="vs-fluidMain">
+        <div class="container">
+          <h3 class="title">ABout Vigdis</h3>
+          <p class="line text-center col-md-9 m-auto pb-4">
+            The Game of Vigdis is a play-to-earn, MMORPG strategy/fantasy game
+            on the Avalanche blockchain. The gameplay of GoV is similar to a
+            traditional strategy game, the only difference is that GoV is
+            powered by blockchain technology and the VIGDIS or $VDS token.
+          </p>
 
-                <div class="col-md-8 m-auto vs-mob-sizecol-md-4">
-                    <div class="row align-items-center">
-                        <div class="col-md-4">
-                            <div class="vs-aboutCols">
-                                <div class="vs-about-no">65</div>
-                                <div class="vs-about-title">Unique Classes</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="vs-aboutCols">
-                                <div class="vs-about-no">145</div>
-                                <div class="vs-about-title">Epic Bosses</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="vs-aboutCols end">
-                                <div class="vs-about-no">35</div>
-                                <div class="vs-about-title">Castles</div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="col-md-8 m-auto vs-mob-sizecol-md-4">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="vs-aboutCols">
+                  <div class="vs-about-no">65</div>
+                  <div class="vs-about-title">Unique Classes</div>
                 </div>
-            </div>
-
-            <div class="container">
-                <div class="vs-tokenomicsMain" id="tokenomics">
-                    <h3 class="title">Tokenomics</h3>
-                    <p class="text-center col-md-9 m-auto pb-4">
-                        Vigdis (VDS)is a blockchain-based gaming platform that joins
-                        millions of gamers enthusiasts in a community where you can buy and play the game.
-                    </p>
-
-                    <div class="vs-tokenProgressBar">
-                        <div class="vs-tokenProgressBar-cols">
-                            <span style="width: 50%; background: #e315d7;box-shadow:0 0 10px #e315d7;"></span>
-                            <span style="width: 10%; background: #e3155e;box-shadow:0 0 10px #e3155e;"></span>
-                            <span style="width: 20%; background: #15d7e3;box-shadow:0 0 10px #15d7e3;"></span>
-                            <span style="width: 10%; background: #f4f10a;box-shadow:0 0 10px #f4f10a;"></span>
-                            <span style="width: 18%; background: #f6850d;box-shadow:0 0 10px #f6850d;"></span>
-                            <span style="width: 16%; background: #ffffff;box-shadow:0 0 10px #ffffff;"></span>
-                            <span style="width: 40%; background: #0cf289;box-shadow:0 0 10px #0cf289;"></span>
-                        </div>
-                        <div class="vs-tokenProgressBar-count">
-                            <div class="count-no">
-                                <div class="Sbtitle">28%</div>
-                                <span class="title"><small class="dot"
-                                        style="box-shadow:0 0 10px #e315d7;background: #e315d7;"></small> Private
-                                    Run</span>
-                            </div>
-                            <div class="count-no">
-                                <div class="Sbtitle">6%</div>
-                                <span class="title"><small class="dot"
-                                        style="box-shadow:0 0 10px #e3155e;background: #e3155e;"></small> Launchpad
-                                    SHO</span>
-                            </div>
-                            <div class="count-no">
-                                <div class="Sbtitle">15%</div>
-                                <span class="title"><small class="dot"
-                                        style="box-shadow:0 0 10px #15d7e3;background: #15d7e3;"></small> Launchpad
-                                    SHO</span>
-                            </div>
-                            <div class="count-no">
-                                <div class="Sbtitle">5%</div>
-                                <span class="title"><small class="dot"
-                                        style="box-shadow:0 0 10px #f4f10a;background: #f4f10a;"></small>
-                                    Advisors</span>
-                            </div>
-                            <div class="count-no">
-                                <div class="Sbtitle">11%</div>
-                                <span class="title"><small class="dot"
-                                        style="box-shadow:0 0 10px #f6850d;background: #f6850d;"></small>
-                                    Development</span>
-                            </div>
-                            <div class="count-no">
-                                <div class="Sbtitle">10%</div>
-                                <span class="title"><small class="dot"
-                                        style="box-shadow:0 0 10px #fff;background: #fff;"></small>
-                                    Team</span>
-                            </div>
-                            <div class="count-no">
-                                <div class="Sbtitle">25%</div>
-                                <span class="title"><small class="dot"
-                                        style="box-shadow:0 0 10px #0cf289;background: #0cf289;"></small>
-                                    Liquidity/Adoption Incentives</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="vs-tokenTable">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Token</th>
-                                    <th>Price</th>
-                                    <th>Supply</th>
-                                    <th>Funds</th>
-                                    <th>TGE & Vesting</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Private Run</td>
-                                    <td>33 600 000</td>
-                                    <td>0.05$</td>
-                                    <td>28%</td>
-                                    <td>1 680 000$</td>
-                                    <td>
-                                        <span>20% TGE</span>
-                                        <span>10% each quarter</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Public Run</td>
-                                    <td>7 200 000</td>
-                                    <td>0.05$</td>
-                                    <td>6%</td>
-                                    <td>360 000$</td>
-                                    <td>
-                                        <span>20% TGE</span>
-                                        <span>80% SHO takens lost by DAO</span>
-                                        <span>Maker exploit (month 2)</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Marketing/Eco</td>
-                                    <td>18 000 000</td>
-                                    <td></td>
-                                    <td>15%</td>
-                                    <td></td>
-                                    <td>
-                                        <span>10% TGE</span>
-                                        <span>2.5% months 4,6,7,10,13,16,19</span>
-                                        <span>5% months 2,3,5,8,9,11,12,14,15,17,18</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Liquidity</td>
-                                    <td>30 000 000</td>
-                                    <td></td>
-                                    <td>25%</td>
-                                    <td></td>
-                                    <td>
-                                        <span>2.5% TGE</span>
-                                        <span>2.5% months 4,7,10,13,16,19</span>
-                                        <span>5% months 2,3,5,6,8,9,11,12,14,15,17,18</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Team</td>
-                                    <td>12 000 000</td>
-                                    <td></td>
-                                    <td>10%</td>
-                                    <td></td>
-                                    <td>
-                                        <span>2.5% TGE</span>
-                                        <span>2.5% months 4,7,10,13,16,19</span>
-                                        <span>5% months 2,3,5,6,8,9,11,12,14,15,17,18</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Advisors</td>
-                                    <td>6 000 000</td>
-                                    <td></td>
-                                    <td>5%</td>
-                                    <td></td>
-                                    <td>
-                                        <span>0% TGE</span>
-                                        <span>5% months 3,5,7,9,11</span>
-                                        <span>7.5% months 13,16,22,28</span>
-                                        <span>15% months 19,25,31</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Development</td>
-                                    <td>13 200 000</td>
-                                    <td></td>
-                                    <td>11%</td>
-                                    <td></td>
-                                    <td>
-                                        <span>0% TGE</span>
-                                        <span>5% months 2,4,7,10</span>
-                                        <span>10% months 13,16,19,22,25</span>
-                                        <span>15% months 28,31</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vs-aboutCols">
+                  <div class="vs-about-no">145</div>
+                  <div class="vs-about-title">Epic Bosses</div>
                 </div>
-            </div>
-
-            <div class="container">
-                <div class="vs-codeCopyMain">
-                    <div class="vs-codeCopy-cols">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="vs-vdsLogoCode">
-                                    <div class="sbTitle">VIGDIS (VDS)</div>
-                                    <img src="images/vds-logo.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="vs-vdsCodeRight-txt">
-                                    <div class="vs-copyCode-field">
-                                        <input class="token-address form-control" type="text" readonly value="0x4a741134EB3FcDcb4fe21f83E997B91c9a7Aef3f">
-                                        <button class="copyBtn">
-                                            <img src="images/copy_icon.png" alt="">
-                                        </button>
-                                    </div>
-                                    <div class="vs-copyCode-box">
-                                        <div class="vs-copyCode-cols">
-                                            <div class="title">TOTAL SUPPLY</div>
-                                            <div class="vs-total">
-                                                120,000,000
-                                                <span>VDS</span>
-                                            </div>
-                                        </div>
-                                        <div class="vs-copyCode-cols">
-                                            <div class="title">TOTAL SUPPLY</div>
-                                            <div class="vs-total">
-                                                120,000,000
-                                                <span>VDS</span>
-                                            </div>
-                                        </div>
-                                        <div class="vs-copyCode-cols">
-                                            <div class="title">TOTAL SUPPLY</div>
-                                            <div class="vs-total">
-                                                120,000,000
-                                                <span>VDS</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-4">
+                <div class="vs-aboutCols end">
+                  <div class="vs-about-no">35</div>
+                  <div class="vs-about-title">Castles</div>
                 </div>
+              </div>
             </div>
-
-            <div class="container">
-                <div class="vs-ourTeamMain">
-                    <h3 class="title">Our Team</h3>
-                    <div class="vs-outTeamPd">
-                        <div class="row justify-content-center">
-                            <div class="col-md-4">
-                                <div class="vs-ourTeam-cols">
-                                    <div class="vs-ourTeam-img">
-                                        <img src="images/team_1.png" alt="">
-                                    </div>
-                                    <div class="vs-ourTeam-text">
-                                        <div class="title">logino dujardin</div>
-                                        <p>
-                                            Logino Dujardin was CEO for Safe Haven, an Asset Management and DeFi 
-                                            company on the VeChain Network. Logino is co-founder of MoonLift Capital, a 
-                                            venture capital and incubator on Binance Smart Chain and was advisor for 
-                                            Vulcan Forged in the early days.
-                                        </p>
-                                        <span>Founder & CEO</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="vs-ourTeam-cols">
-                                    <div class="vs-ourTeam-img">
-                                        <img src="images/team_2.png" alt="">
-                                    </div>
-                                    <div class="vs-ourTeam-text">
-                                        <div class="title">Givano Verstraete</div>
-                                        <p>
-                                            This is a game changing project with clear vision and perfect plan how to build
-                                            a bridge between blockchain and gaming.
-                                        </p>
-                                        <span>Co-founder & Social Media Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="vs-ourTeam-cols">
-                                    <div class="vs-ourTeam-img">
-                                        <img src="images/team_3.png" alt="">
-                                    </div>
-                                    <div class="vs-ourTeam-text">
-                                        <div class="title">Stijn Doom</div>
-                                        <p>
-                                            I founded several successful companies and worked for corporate entities focussed on
-                                            logistics. Stijn has the experience and knowledge to bring Vigdis to the next level
-                                            and will work as Business & Growth.
-                                        </p>
-                                        <span>Co-founder & Business Growth</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="vs-ourTeam-cols">
-                                    <div class="vs-ourTeam-img">
-                                        <img src="images/team_4.png" class="nv-rl-90" alt="">
-                                    </div>
-                                    <div class="vs-ourTeam-text">
-                                        <div class="title">Parveen sharma</div>
-                                        <p>
-                                            With over 10 years in the industry, working with some of the  best agencies 
-                                            and the worlds biggest household Names. Excited to be the part of "Vigdis". 
-                                            Every beginning is a new challenge. I welcome the challenges.
-                                        </p>
-                                        <span>Creative Head</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="vs-ourTeam-cols">
-                                    <div class="vs-ourTeam-img">
-                                        <img src="images/team_5.png" alt="">
-                                    </div>
-                                    <div class="vs-ourTeam-text">
-                                        <div class="title">Yogesh kumar</div>
-                                        <p>
-                                            This is a game changing project with clear vision and perfect plan how to build
-                                            a bridge between blockchain and gaming.
-                                        </p>
-                                        <span>Front End Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="vs-ourTeam-cols">
-                                    <div class="vs-ourTeam-img">
-                                        <img src="images/team_6.png" alt="">
-                                    </div>
-                                    <div class="vs-ourTeam-text">
-                                        <div class="title">Nail Haikal</div>
-                                        <p>
-                                            This is a game changing project with clear vision and perfect plan how to build
-                                            a bridge between blockchain and gaming.
-                                        </p>
-                                        <span>Character Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="vs-joinVigdisMain">
-                <div class="container">
-                    <div class="vs-joinVigdis-cols">
-                        <div class="title">
-                            Join Our Mailing List For The Latest Updates On The War Of Vigdis
-                        </div>
-                        <div class="vs-joinBtn">
-                            <a href="#"><span>join the revolution</span></a>
-                        </div>
-                        <div class="vs-joinSocial">
-                            <a href="#"><img src="images/facebbok.png" title="Facebbok" alt=""></a>
-                            <a href="#"><img src="images/discord.png" title="Discord" alt=""></a>
-                            <a href="#"><img src="images/twitter.png" title="Twitter" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="vs-ourPartnerMain">
-                    <div class="vs-partnerCols">
-                        <div class="vs-partnerBox">
-                            <div class="title">OUR GAMING PARTNER</div>
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_1.png" alt="">
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_2.png" alt="">
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_3.png" alt="">
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_4.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="container">
+          <div class="vs-tokenomicsMain" id="tokenomics">
+            <h3 class="title">Tokenomics</h3>
+            <p class="text-center line col-md-9 m-auto pb-4">
+              Vigdis (VDS) is a blockchain-based gaming platform that joins
+              millions of gamers enthusiasts in a community where you can buy
+              and play the game.
+            </p>
+
+            <div class="vs-tokenProgressBar">
+              <div class="vs-tokenProgressBar-cols">
+                <span
+                  style="
+                    width: 50%;
+                    background: #e315d7;
+                    box-shadow: 0 0 10px #e315d7;
+                  "
+                ></span>
+                <span
+                  style="
+                    width: 10%;
+                    background: #e3155e;
+                    box-shadow: 0 0 10px #e3155e;
+                  "
+                ></span>
+                <span
+                  style="
+                    width: 20%;
+                    background: #15d7e3;
+                    box-shadow: 0 0 10px #15d7e3;
+                  "
+                ></span>
+                <span
+                  style="
+                    width: 10%;
+                    background: #f4f10a;
+                    box-shadow: 0 0 10px #f4f10a;
+                  "
+                ></span>
+                <span
+                  style="
+                    width: 18%;
+                    background: #f6850d;
+                    box-shadow: 0 0 10px #f6850d;
+                  "
+                ></span>
+                <span
+                  style="
+                    width: 16%;
+                    background: #ffffff;
+                    box-shadow: 0 0 10px #ffffff;
+                  "
+                ></span>
+                <span
+                  style="
+                    width: 40%;
+                    background: #0cf289;
+                    box-shadow: 0 0 10px #0cf289;
+                  "
+                ></span>
+              </div>
+              <div class="vs-tokenProgressBar-count">
+                <div class="count-no">
+                  <div class="Sbtitle">28%</div>
+                  <span class="title"
+                    ><small
+                      class="dot"
+                      style="box-shadow: 0 0 10px #e315d7; background: #e315d7"
+                    ></small>
+                    Private Run</span
+                  >
+                </div>
+                <div class="count-no">
+                  <div class="Sbtitle">6%</div>
+                  <span class="title"
+                    ><small
+                      class="dot"
+                      style="box-shadow: 0 0 10px #e3155e; background: #e3155e"
+                    ></small>
+                    Launchpad SHO</span
+                  >
+                </div>
+                <div class="count-no">
+                  <div class="Sbtitle">15%</div>
+                  <span class="title"
+                    ><small
+                      class="dot"
+                      style="box-shadow: 0 0 10px #15d7e3; background: #15d7e3"
+                    ></small>
+                    Launchpad SHO</span
+                  >
+                </div>
+                <div class="count-no">
+                  <div class="Sbtitle">5%</div>
+                  <span class="title"
+                    ><small
+                      class="dot"
+                      style="box-shadow: 0 0 10px #f4f10a; background: #f4f10a"
+                    ></small>
+                    Advisors</span
+                  >
+                </div>
+                <div class="count-no">
+                  <div class="Sbtitle">11%</div>
+                  <span class="title"
+                    ><small
+                      class="dot"
+                      style="box-shadow: 0 0 10px #f6850d; background: #f6850d"
+                    ></small>
+                    Development</span
+                  >
+                </div>
+                <div class="count-no">
+                  <div class="Sbtitle">10%</div>
+                  <span class="title"
+                    ><small
+                      class="dot"
+                      style="box-shadow: 0 0 10px #fff; background: #fff"
+                    ></small>
+                    Team</span
+                  >
+                </div>
+                <div class="count-no">
+                  <div class="Sbtitle">25%</div>
+                  <span class="title"
+                    ><small
+                      class="dot"
+                      style="box-shadow: 0 0 10px #0cf289; background: #0cf289"
+                    ></small>
+                    Liquidity/Adoption Incentives</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="vs-tokenTable">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Token</th>
+                    <th>Price</th>
+                    <th>Supply</th>
+                    <th>Funds</th>
+                    <th>TGE & Vesting</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Private Run</td>
+                    <td>33 600 000</td>
+                    <td>0.05$</td>
+                    <td>28%</td>
+                    <td>1 680 000$</td>
+                    <td>
+                      <span>20% TGE</span>
+                      <span>10% each quarter</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Public Run</td>
+                    <td>7 200 000</td>
+                    <td>0.05$</td>
+                    <td>6%</td>
+                    <td>360 000$</td>
+                    <td>
+                      <span>20% TGE</span>
+                      <span>80% SHO takens lost by DAO</span>
+                      <span>Maker exploit (month 2)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Marketing/Eco</td>
+                    <td>18 000 000</td>
+                    <td></td>
+                    <td>15%</td>
+                    <td></td>
+                    <td>
+                      <span>10% TGE</span>
+                      <span>2.5% months 4,6,7,10,13,16,19</span>
+                      <span>5% months 2,3,5,8,9,11,12,14,15,17,18</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Liquidity</td>
+                    <td>30 000 000</td>
+                    <td></td>
+                    <td>25%</td>
+                    <td></td>
+                    <td>
+                      <span>2.5% TGE</span>
+                      <span>2.5% months 4,7,10,13,16,19</span>
+                      <span>5% months 2,3,5,6,8,9,11,12,14,15,17,18</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Team</td>
+                    <td>12 000 000</td>
+                    <td></td>
+                    <td>10%</td>
+                    <td></td>
+                    <td>
+                      <span>2.5% TGE</span>
+                      <span>2.5% months 4,7,10,13,16,19</span>
+                      <span>5% months 2,3,5,6,8,9,11,12,14,15,17,18</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Advisors</td>
+                    <td>6 000 000</td>
+                    <td></td>
+                    <td>5%</td>
+                    <td></td>
+                    <td>
+                      <span>0% TGE</span>
+                      <span>5% months 3,5,7,9,11</span>
+                      <span>7.5% months 13,16,22,28</span>
+                      <span>15% months 19,25,31</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Development</td>
+                    <td>13 200 000</td>
+                    <td></td>
+                    <td>11%</td>
+                    <td></td>
+                    <td>
+                      <span>0% TGE</span>
+                      <span>5% months 2,4,7,10</span>
+                      <span>10% months 13,16,19,22,25</span>
+                      <span>15% months 28,31</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="vs-codeCopyMain">
+            <div class="vs-codeCopy-cols">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="vs-vdsLogoCode">
+                    <div class="sbTitle">VIGDIS (VDS)</div>
+                    <img src="images/vds-logo.png" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="vs-vdsCodeRight-txt">
+                    <div class="vs-copyCode-field">
+                      <input
+                        class="token-address form-control"
+                        type="text"
+                        readonly
+                        value="0x4a741134EB3FcDcb4fe21f83E997B91c9a7Aef3f"
+                      />
+                      <button class="copyBtn">
+                        <img src="images/copy_icon.png" alt="" />
+                      </button>
+                    </div>
+                    <div class="vs-copyCode-box">
+                      <div class="vs-copyCode-cols">
+                        <div class="title">TOTAL SUPPLY</div>
+                        <div class="vs-total">
+                          120,000,000
+                          <span>VDS</span>
+                        </div>
+                      </div>
+                      <div class="vs-copyCode-cols">
+                        <div class="title">VDS Price</div>
+                        <div class="vs-total">0.07$</div>
+                      </div>
+                      <div class="vs-copyCode-cols">
+                        <div class="title">MARKEY CAP</div>
+                        <div class="vs-total">0.0$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="vs-ourTeamMain">
+            <h3 class="title">Our Team</h3>
+            <div class="vs-outTeamPd">
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <div class="vs-ourTeam-cols">
+                    <div class="vs-ourTeam-img">
+                      <img src="images/team_1.png" alt="" />
+                    </div>
+                    <div class="vs-ourTeam-text">
+                      <div class="title">logino dujardin</div>
+                      <p>
+                        Logino Dujardin was CEO for Safe Haven, an Asset
+                        Management and DeFi company on the VeChain Network.
+                        Logino is co-founder of MoonLift Capital, a venture
+                        capital and incubator on Binance Smart Chain and was
+                        advisor for Vulcan Forged in the early days.
+                      </p>
+                      <span>Founder & CEO</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="vs-ourTeam-cols">
+                    <div class="vs-ourTeam-img">
+                      <img src="images/team_2.png" alt="" />
+                    </div>
+                    <div class="vs-ourTeam-text">
+                      <div class="title">Givano Verstraete</div>
+                      <p>
+                        This is a game changing project with clear vision and
+                        perfect plan how to build a bridge between blockchain
+                        and gaming.
+                      </p>
+                      <span>Co-founder & Social Media Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="vs-ourTeam-cols">
+                    <div class="vs-ourTeam-img">
+                      <img src="images/team_3.png" alt="" />
+                    </div>
+                    <div class="vs-ourTeam-text">
+                      <div class="title">Stijn Doom</div>
+                      <p>
+                        I founded several successful companies and worked for
+                        corporate entities focussed on logistics. Stijn has the
+                        experience and knowledge to bring Vigdis to the next
+                        level and will work as Business & Growth.
+                      </p>
+                      <span>Co-founder & Business Growth</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="vs-ourTeam-cols">
+                    <div class="vs-ourTeam-img">
+                      <img src="images/team_4.png" class="nv-rl-90" alt="" />
+                    </div>
+                    <div class="vs-ourTeam-text">
+                      <div class="title">Parveen sharma</div>
+                      <p>
+                        With over 10 years in the industry, working with some of
+                        the best agencies and the worlds biggest household
+                        Names. Excited to be the part of "Vigdis". Every
+                        beginning is a new challenge. I welcome the challenges.
+                      </p>
+                      <span>Creative Head</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="vs-ourTeam-cols">
+                    <div class="vs-ourTeam-img">
+                      <img src="images/team_5.png" alt="" />
+                    </div>
+                    <div class="vs-ourTeam-text">
+                      <div class="title">Yogesh kumar</div>
+                      <p>
+                        6+ years of professional experience in developing mid to
+                        large-scale websites and web-applications based on web
+                        standard technologies.
+                      </p>
+                      <span>Front End Developer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="vs-ourTeam-cols">
+                    <div class="vs-ourTeam-img">
+                      <img src="images/team_6.png" alt="" />
+                    </div>
+                    <div class="vs-ourTeam-text">
+                      <div class="title">Nail Haikal</div>
+                      <p>
+                        This is a game changing project with clear vision and
+                        perfect plan how to build a bridge between blockchain
+                        and gaming.
+                      </p>
+                      <span>Character Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vs-joinVigdisMain">
+          <div class="container">
+            <div class="vs-joinVigdis-cols">
+              <div class="title">
+                Join Our Mailing List For The Latest Updates On The War Of
+                Vigdis
+              </div>
+              <div class="vs-joinBtn">
+                <a href="#"><span>join the revolution</span></a>
+              </div>
+              <div class="vs-joinSocial">
+                <a href="#"
+                  ><img src="images/facebbok.png" title="Facebbok" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="images/discord.png" title="Discord" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="images/twitter.png" title="Twitter" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="vs-ourPartnerMain">
+            <div class="vs-partnerCols">
+              <div class="vs-partnerBox">
+                <div class="title">OUR GAMING PARTNER</div>
+              </div>
+              <div class="vs-partnerBox">
+                <img src="images/partner_1.png" alt="" />
+              </div>
+              <div class="vs-partnerBox">
+                <img src="images/partner_2.png" alt="" />
+              </div>
+              <div class="vs-partnerBox">
+                <img src="images/partner_3.png" alt="" />
+              </div>
+              <div class="vs-partnerBox">
+                <img src="images/partner_4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- login-start -->
 
     <div class="modal fade vs-loginModalMain" id="loginvigdis" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="vs-metaLogo">
-                    <img src="images/meta_login.png" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4>To CONTINUE ON THIS WEBSITE</h4>
-                    <div class="text-center">
-                        <a class="login-trigger" href="#">login with metamask</a>
-                    </div>
-                    <p>You are always in control on Riot Racers when using MetaMask.</p>
-                </div>
-
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="vs-metaLogo">
+            <img src="images/meta_login.png" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4>To CONTINUE ON THIS WEBSITE</h4>
+            <div class="text-center">
+              <a class="login-trigger" href="#">login with metamask</a>
             </div>
+            <p>You are always in control on Riot Racers when using MetaMask.</p>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- end -->
 
     <footer>
-        <div class="container">
-            <h4 class="text-center col-md-7 m-auto">
-                <span>The Game of Vigdis</span> provides a comprehensive game economy that uses the power,
-                trust and Coin
-            </h4>
+      <div class="container">
+        <h4 class="footer-title text-center col-md-7 m-auto">
+          <span>The Game of Vigdis</span> provides a comprehensive game economy
+          that uses the power, trust and Coin
+        </h4>
 
-            <div class="vs-appDownload">
-                <div class="vs-appDownload-cols">
-                    <a href="#"><img src="images/apple.png" alt=""></a>
-                    <span><small>Coming soon on</small> Apple macOS</span>
-                </div>
-                <div class="vs-appDownload-cols">
-                    <a href="#"><img src="images/window.png" alt=""></a>
-                    <span><small>Coming soon on</small> Apple macOS</span>
-                </div>
-            </div>
-
-            <div class="vs-copyright">Copyright 2022 © TheGamesOfVigdis</div>
+        <div class="vs-appDownload">
+          <div class="vs-appDownload-cols">
+            <a href="#"><img src="images/apple.png" alt="" /></a>
+            <span><small>Coming soon on</small> Apple macOS</span>
+          </div>
+          <div class="vs-appDownload-cols">
+            <a href="#"><img src="images/window.png" alt="" /></a>
+            <span><small>Coming soon on</small> Apple macOS</span>
+          </div>
         </div>
+
+        <div class="vs-copyright">Copyright 2022 © TheGamesOfVigdis</div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/metamask-onboarding.bundle.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

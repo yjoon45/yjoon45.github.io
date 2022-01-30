@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #000;
@@ -24,6 +25,7 @@ html, body {
 h3.title {
   font-family: "Vampire Wars" !important;
   font-size: 28px;
+  letter-spacing: 1px;
   text-align: center;
   background: #fbee2e;
   /* Old browsers */
@@ -37,6 +39,11 @@ h3.title {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-width: 992px) {
+  h3.title {
+    font-size: 34px;
+  }
+}
 
 header {
   padding: 30px 0;
@@ -49,6 +56,49 @@ header {
 @media (max-width: 991px) {
   header {
     padding: 15px 0;
+  }
+}
+@media (max-width: 991px) {
+  header .d-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+header .vs-mobileConnect-btn {
+  display: none;
+}
+@media (max-width: 991px) {
+  header .vs-mobileConnect-btn {
+    display: block;
+  }
+  header .vs-mobileConnect-btn a.connectBtn {
+    display: inline-block;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Vampire Wars";
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 300;
+    background: #fef42f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fef42f), to(#9a401f));
+    background: linear-gradient(to bottom, #fef42f 0%, #9a401f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fef42f", endColorstr="#9a401f",GradientType=0 );
+  }
+  header .vs-mobileConnect-btn a.connectBtn span {
+    border: 3px solid #f4c50f;
+    padding: 4px 12px;
+    display: inline-block;
+    border-radius: 60px;
+    border: 3px solid -moz-linear-gradient(top, #fef42f 0%, #9a401f 100%);
+    border: 3px solid -webkit-linear-gradient(top, #fef42f 0%, #9a401f 100%);
+    border: 3px solid linear-gradient(to bottom, #fef42f 0%, #9a401f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fef42f", endColorstr="#9a401f",GradientType=0 );
+  }
+  header .vs-mobileConnect-btn a.connectBtn span img {
+    width: 18px;
   }
 }
 @media (max-width: 991px) {
@@ -160,6 +210,7 @@ header .vs-nav ul li:last-child {
 header .vs-nav ul li a {
   font-family: "Vampire Wars";
   text-decoration: none;
+  letter-spacing: 1px;
   color: #fff;
   font-weight: 300;
   -webkit-transition: all 0.5s;
@@ -183,16 +234,15 @@ header .vs-logo {
           transform: translate(-50%);
 }
 @media (max-width: 991px) {
-  header .vs-logo img {
-    width: 100%;
-    max-width: 130px;
+  header .vs-logo {
+    top: 13px;
+    margin: 0 -25px;
   }
 }
 @media (max-width: 991px) {
-  header .vs-logo {
-    position: inherit;
-    -webkit-transform: inherit;
-            transform: inherit;
+  header .vs-logo img {
+    width: 100%;
+    max-width: 120px;
   }
 }
 header .vs-headRight {
@@ -203,6 +253,11 @@ header .vs-headRight {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .vs-headRight .vs-m-none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (max-width: 991px) {
   header .vs-headRight .vs-m-none {
@@ -296,6 +351,7 @@ header .vs-headRight .vs-profileUser {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 0;
   }
 }
 header .vs-headRight .vs-profileUser .vs-mobBtnNav {
@@ -310,7 +366,7 @@ header .vs-headRight .vs-profileUser .vs-mobBtnNav {
     background-size: 35px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    margin-left: 40px;
+    margin-left: 0;
   }
 }
 @media (max-width: 991px) {
@@ -325,6 +381,11 @@ header .vs-headRight .vs-profileUser .vs-mobBtnNav {
     background-size: 25px;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
+  }
+}
+@media (max-width: 991px) {
+  header .vs-headRight .vs-profileUser .dropdown {
+    display: none;
   }
 }
 header .vs-headRight .vs-profileUser .dropdown .dropdown-toggle {
@@ -387,13 +448,32 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
 .vs-banner img {
   width: 100%;
 }
+.vs-banner .vs-mobileBanner {
+  display: none;
+}
+@media (max-width: 767px) {
+  .vs-banner .vs-mobileBanner {
+    display: block;
+    width: 100%;
+  }
+}
 .vs-banner video {
   width: 100%;
+}
+@media (max-width: 767px) {
+  .vs-banner video {
+    display: none;
+  }
 }
 .vs-banner .vs-banner-trigger {
   position: absolute;
   bottom: 0;
   right: 1%;
+}
+@media (max-width: 767px) {
+  .vs-banner .vs-banner-trigger {
+    display: none;
+  }
 }
 .vs-banner .vs-banner-trigger button {
   border: 1px solid transparent;
@@ -455,6 +535,16 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
   padding: 50px 0 30px;
   margin-top: 0;
 }
+@media (max-width: 991px) {
+  .vs-fluidMain {
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .vs-fluidMain .line {
+    font-size: 18px;
+  }
+}
 @media (max-width: 767px) {
   .vs-fluidMain .vs-mob-sizecol-md-4 .col-md-4 {
     width: 33%;
@@ -484,11 +574,11 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
 .vs-fluidMain .vs-aboutCols .vs-about-no {
   display: block;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 48px;
   font-family: "god-of-war";
 }
 .vs-fluidMain .vs-aboutCols .vs-about-title {
-  font-size: 15px;
+  font-size: 20px;
   display: block;
 }
 .vs-fluidMain .vs-aboutCols.end::after {
@@ -496,6 +586,11 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
 }
 .vs-fluidMain .vs-tokenomicsMain {
   padding: 80px 0 0;
+}
+@media (min-width: 768px) {
+  .vs-fluidMain .vs-tokenomicsMain .line {
+    font-size: 18px;
+  }
 }
 .vs-fluidMain .vs-tokenomicsMain .vs-tokenProgressBar {
   width: 100%;
@@ -546,13 +641,13 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
   }
 }
 .vs-fluidMain .vs-tokenomicsMain .vs-tokenProgressBar .vs-tokenProgressBar-count .count-no .Sbtitle {
-  font-size: 17px;
+  font-size: 24px;
   font-family: "god-of-war";
 }
 .vs-fluidMain .vs-tokenomicsMain .vs-tokenProgressBar .vs-tokenProgressBar-count .count-no .title {
-  font-size: 10px;
+  font-size: 12px;
   color: #ababab;
-  margin-left: -13px;
+  margin-left: -15px;
 }
 @media (max-width: 767px) {
   .vs-fluidMain .vs-tokenomicsMain .vs-tokenProgressBar .vs-tokenProgressBar-count .count-no .title {
@@ -607,7 +702,8 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
   color: #df5c0c;
   font-weight: 300;
   border: none !important;
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 1px;
   padding: 15px 8px;
   border-bottom: 3px dashed #919191 !important;
 }
@@ -642,7 +738,8 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
   color: #fff;
   border: none;
   border-bottom: 3px dashed #919191;
-  font-size: 13px;
+  font-size: 15px;
+  letter-spacing: 1px;
   padding: 15px 8px;
   vertical-align: middle;
   white-space: nowrap;
@@ -653,7 +750,7 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
 .vs-fluidMain .vs-tokenomicsMain .vs-tokenTable table tr td:last-child span {
   display: block;
   width: 100%;
-  font-size: 11px;
+  font-size: 13px;
 }
 .vs-fluidMain .vs-tokenomicsMain .vs-tokenTable table tr td:nth-child(01) {
   background: #222;
@@ -722,6 +819,11 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
   display: block;
   text-align: center;
   margin-bottom: 3px;
+}
+@media (min-width: 992px) {
+  .vs-fluidMain .vs-codeCopyMain .vs-codeCopy-cols .vs-vdsLogoCode .sbTitle {
+    font-size: 33px;
+  }
 }
 .vs-fluidMain .vs-codeCopyMain .vs-codeCopy-cols .vs-vdsCodeRight-txt .vs-copyCode-field {
   width: 100%;
@@ -799,8 +901,13 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
   font-weight: 500;
 }
 .vs-fluidMain .vs-codeCopyMain .vs-codeCopy-cols .vs-vdsCodeRight-txt .vs-copyCode-box .vs-copyCode-cols .vs-total {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
+}
+@media (min-width: 992px) {
+  .vs-fluidMain .vs-codeCopyMain .vs-codeCopy-cols .vs-vdsCodeRight-txt .vs-copyCode-box .vs-copyCode-cols .vs-total {
+    font-size: 23px;
+  }
 }
 .vs-fluidMain .vs-codeCopyMain .vs-codeCopy-cols .vs-vdsCodeRight-txt .vs-copyCode-box .vs-copyCode-cols .vs-total span {
   display: block;
@@ -835,11 +942,10 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  padding: 150px 0 0;
+  padding: 30px 0 0;
 }
 @media (max-width: 767px) {
   .vs-fluidMain .vs-ourTeamMain .vs-ourTeam-cols {
-    padding: 30px 0 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -896,6 +1002,12 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
 .vs-fluidMain .vs-ourTeamMain .vs-ourTeam-cols .vs-ourTeam-text .title {
   font-family: "Vampire Wars";
   font-size: 14px;
+  letter-spacing: 1px;
+}
+@media (min-width: 992px) {
+  .vs-fluidMain .vs-ourTeamMain .vs-ourTeam-cols .vs-ourTeam-text .title {
+    font-size: 19px;
+  }
 }
 .vs-fluidMain .vs-ourTeamMain .vs-ourTeam-cols .vs-ourTeam-text p {
   font-size: 11px;
@@ -920,11 +1032,11 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
 }
 .vs-joinVigdisMain .vs-joinVigdis-cols {
   width: 100%;
-  max-width: 700px;
+  max-width: 840px;
   border: 2px solid #f4c50f;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: auto;
-  padding: 25px 150px;
+  padding: 40px 60px;
 }
 @media (max-width: 767px) {
   .vs-joinVigdisMain .vs-joinVigdis-cols {
@@ -935,19 +1047,26 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
   font-size: 18px;
   text-align: center;
   font-weight: 600;
+  letter-spacing: 1px;
+}
+@media (min-width: 992px) {
+  .vs-joinVigdisMain .vs-joinVigdis-cols .title {
+    font-size: 24px;
+  }
 }
 .vs-joinVigdisMain .vs-joinVigdis-cols .vs-joinBtn {
   text-align: center;
-  padding: 18px 0 25px;
+  padding: 30px 0 25px;
 }
 .vs-joinVigdisMain .vs-joinVigdis-cols .vs-joinBtn a {
   display: inline-block;
   padding: 5px 10px;
   text-transform: uppercase;
   color: #fff;
-  font-family: "Vampire Wars";
+  font-family: "Vampire wars";
   border-radius: 60px;
   font-weight: 300;
+  letter-spacing: 1px;
   background: #fef42f;
   /* Old browsers */
   /* FF3.6-15 */
@@ -1070,9 +1189,17 @@ header .vs-headRight .vs-profileUser .dropdown .dropdown-menu li a:focus {
     margin: 10px 15px;
   }
 }
+.vs-ourPartnerMain .vs-partnerCols .vs-partnerBox .title {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 .vs-ourPartnerMain .vs-partnerCols .vs-partnerBox img {
-  width: 100%;
-  max-width: 100px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .vs-ourPartnerMain .vs-partnerCols .vs-partnerBox img {
+    max-width: 100px;
+  }
 }
 
 footer {
@@ -1584,7 +1711,7 @@ footer .vs-copyright {
 }
 
 .progress.yellow .progress-bar {
-  border-color: #FEEA02;
+  border-color: #feea02;
   /* Old browsers */
   border-color: -moz-linear-gradient(top, #feea02 0%, #f16026 50%, #f16026 50%, #feea02 98%);
   /* FF3.6-15 */
@@ -1681,7 +1808,35 @@ footer .vs-copyright {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
   background-color: black;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comig-soon {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.comig-soon-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/coming-soon.png) no-repeat center center/300px;
+  z-index: 1;
+}
+
+.footer-title {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .footer-title {
+    font-size: 24px;
+  }
+}
+
+.connectBtn {
+  letter-spacing: 1px;
 }

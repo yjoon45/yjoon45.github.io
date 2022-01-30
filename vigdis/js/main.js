@@ -20,15 +20,17 @@ $(function () {
   var $loader = $('.loader');
   var $loaderVideo = $('.loader video').get(0);
 
-  $loaderVideo.addEventListener('ended', function () {
-    $loader.fadeOut('fast');
-  });
+  if ($loaderVideo) {
+    $loaderVideo.addEventListener('ended', function () {
+      $loader.fadeOut('fast');
+    });
+  }
 
   function copyToClipboard(element) {
     var temp = $(element).val();
 
     $(element).select();
-    document.execCommand("copy");
+    document.execCommand('copy');
     $(element).val('Copied');
 
     setTimeout(function () {
@@ -45,14 +47,14 @@ $(function () {
   function isMetaMaskInstalled() {
     var ethereum = window.ethereum;
     return Boolean(ethereum && ethereum.isMetaMask);
-  };
+  }
 
   function onClickInstall() {
     var forwarderOrigin = window.location.origin;
     var onboarding = new MetaMaskOnboarding({ forwarderOrigin });
 
     onboarding.startOnboarding();
-  };
+  }
 
   function handleConnectWallet(address) {
     var addr = Array.isArray(address) ? address[0] : address;
@@ -93,11 +95,11 @@ $(function () {
   }
 
   function onClickConnect() {
-    ethereum.request({ method: 'eth_requestAccounts' })
+    ethereum
+      .request({ method: 'eth_requestAccounts' })
       .then(handleConnectWallet)
-      .catch(err => console.log('Error linking wallet: ', err));
-  };
-
+      .catch((err) => console.log('Error linking wallet: ', err));
+  }
 
   $('.login-trigger').on('click', function () {
     if (isMetaMaskInstalled()) {
@@ -119,7 +121,10 @@ $(function () {
     });
   }
 
-  if (localStorage.getItem('walletConnect') && localStorage.getItem('loginClicked')) {
+  if (
+    localStorage.getItem('walletConnect') &&
+    localStorage.getItem('loginClicked')
+  ) {
     onClickConnect();
   }
 });

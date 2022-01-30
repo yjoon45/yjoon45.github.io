@@ -1,220 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vigdis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-</head>
-<header>
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="vs-nav">
-                <ul>
-                    <li><a href="index.html#top">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#tokenomics">Tokenomics</a></li>
-                    <li><a href="staking.html">Staking</a></li>
-                </ul>
-                <div class="vs-m-block">
-                    <li>
-                        <a href="#" class="connectBtn" data-bs-toggle="modal" data-bs-target="#loginvigdis">
-                            <span><img src="images/connect.png" alt="">Connect wallet</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="wallet"><img src="images/wallet.png" alt=""> <span>8.5K</span></a>
-                    </li>
-                </div>
-            </div>
-            <div class="vs-logo">
-                <img src="images/logo.png" alt="">
-            </div>
-            <div class="vs-headRight">
-                <ul class="wallet-list vs-m-none">
-                    <li>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginvigdis" class="connectBtn">
-                            <span><img src="images/connect.png" alt=""> Connect wallet</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-hidden">
+    <header>
+      <a id="top"></a>
 
-<section>
-    <div class="vs-stakingFluid">
-        <div class="vs-stakingMain">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="vs-nav">
+            <ul>
+              <li><a href="index.html#top">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#tokenomics">Tokenomics</a></li>
+              <li><a href="staking.html">Staking</a></li>
+            </ul>
+            <!-- <div class="vs-m-block">
+              <li>
+                <a href="#" class="wallet"
+                  ><img src="images/wallet.png" alt="" /> 8.5K</a
+                >
+              </li>
+            </div> -->
+          </div>
+          <div class="vs-logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <li class="vs-mobileConnect-btn">
+            <a
+              href="#"
+              class="connectBtn"
+              data-bs-target="#loginvigdis"
+            >
+              <span><img src="images/connect.png" alt="" /> Connect</span>
+            </a>
+          </li>
+          <div class="vs-headRight">
+            <div class="vs-m-none">
+              <li>
+                <a
+                  href="#"
+                  data-bs-target="#loginvigdis"
+                  class="connectBtn"
+                >
+                  <span><img src="images/connect.png" alt="" /> Connect wallet</span>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="#" class="wallet"
+                  ><img src="images/wallet.png" alt="" /> 8.5K</a
+                >
+              </li> -->
+            </div>
+            <div class="vs-profileUser">
+              <!-- <div class="dropdown">
+                <button
+                  class="dropdown-toggle"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="images/user.png" alt="" />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">View Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+              </div> -->
+              <div class="vs-mobBtnNav" id="sdhmob-nav"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="comig-soon">
+        <section>
+        <div class="vs-stakingFluid">
+            <div class="vs-stakingMain">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="vs-staking-cols">
-                            <div class="vs-staking-img">
-                                <img src="images/stake.png" alt="">
-                            </div>
-                            <div class="vs-staking-text">
-                                <div class="title">Stake</div>
-                                <p>Welcome to the Vigdis staking
-                                    protocol. Here you are
-                                    able to benefit from <span>staking tokens</span>
-                                    and <span>receiving VDS</span> rewards.</p>
+                <div class="col-md-4">
+                    <div class="vs-staking-cols">
+                    <div class="vs-staking-img">
+                        <img src="images/stake.png" alt="" />
+                    </div>
+                    <div class="vs-staking-text">
+                        <div class="title">Stake</div>
+                        <p>
+                        Welcome to the Vigdis staking protocol. Here you are able
+                        to benefit from <span>staking tokens</span> and
+                        <span>receiving VDS</span> rewards.
+                        </p>
 
-                                <a href="#">Core Pools</a>
+                        <a href="#">Core Pools</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="vs-staking-cols">
+                    <div class="vs-staking-img">
+                        <img src="images/rewards.png" alt="" />
+                    </div>
+                    <div class="vs-staking-text">
+                        <div class="title">Rewards</div>
+                        <p>
+                        Staking rewards are distributed as
+                        <span>VDS</span> tokens.
+                        </p>
+
+                        <a href="#">Core Pools</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="vs-staking-cols">
+                    <div class="vs-staking-img">
+                        <img src="images/vesting.png" alt="" />
+                    </div>
+                    <div class="vs-staking-text">
+                        <div class="title">Vesting</div>
+                        <p>
+                        <span>View</span> and <span>claim</span> your vested
+                        rewards and deposits.
+                        </p>
+
+                        <a href="#">Core Pools</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="vs-staking-cols mt-5">
+                    <div class="vs-staking-text">
+                        <div class="title">Vesting</div>
+                        <div class="d-flex justify-content-center">
+                        <div class="progress yellow">
+                            <span class="progress-left">
+                            <span class="progress-bar"> </span>
+                            </span>
+                            <span class="progress-right">
+                            <span class="progress-bar"> </span>
+                            </span>
+                            <div class="progress-value">
+                            <small>Total</small> Distributed
+                            <span>0.0M</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="vs-staking-cols">
-                            <div class="vs-staking-img">
-                                <img src="images/rewards.png" alt="">
-                            </div>
-                            <div class="vs-staking-text">
-                                <div class="title">Rewards</div>
-                                <p>Staking rewards are distributed
-                                    as <span>VDS</span> tokens.</p>
-
-                                <a href="#">Core Pools</a>
-                            </div>
                         </div>
+                        <div class="vs-progressValue">VDS Value: 0.0M</div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="vs-staking-cols">
-                            <div class="vs-staking-img">
-                                <img src="images/vesting.png" alt="">
-                            </div>
-                            <div class="vs-staking-text">
-                                <div class="title">Vesting</div>
-                                <p><span>View</span> and <span>claim</span> your vested
-                                    rewards and deposits.</p>
-
-                                <a href="#">Core Pools</a>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="vs-staking-cols mt-5">
-                            <div class="vs-staking-text">
-                                <div class="title">Vesting</div>
-                                <div class="d-flex justify-content-center">
-                                    <div class="progress yellow">
-                                        <span class="progress-left">
-                                            <span class="progress-bar">
-
-                                            </span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span class="progress-bar">
-
-                                            </span>
-                                        </span>
-                                        <div class="progress-value">
-                                            <small>Total</small> Distributed
-                                            <span>0.0M</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="vs-progressValue">
-                                    VDS Value: 0.0M
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="vs-staking-cols pd-0 mt-5">
+                    <div class="vs-staking-text">
+                        <div class="title">Total Amount Staked</div>
+                        <span class="vs-viewCols">0.0M</span>
                     </div>
-                    <div class="col-md-8">
-                        <div class="vs-staking-cols pd-0 mt-5">
-                            <div class="vs-staking-text">
-                                <div class="title">Total Amount Staked</div>
-                                <span class="vs-viewCols">0.0M</span>
-                            </div>
-                            <div class="vs-graphImg">
-                                <img src="images/graph.png" alt="">
-                            </div>
-                        </div>
+                    <div class="vs-graphImg">
+                        <img src="images/graph.png" alt="" />
                     </div>
-
+                    </div>
+                </div>
                 </div>
             </div>
 
             <div class="container">
                 <div class="vs-ourPartnerMain">
-                    <div class="vs-partnerCols">
-                        <div class="vs-partnerBox">
-                            <div class="title">OUR GAMING PARTNER</div>
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_1.png" alt="">
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_2.png" alt="">
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_3.png" alt="">
-                        </div>
-                        <div class="vs-partnerBox">
-                            <img src="images/partner_4.png" alt="">
-                        </div>
+                <div class="vs-partnerCols">
+                    <div class="vs-partnerBox">
+                    <div class="title">OUR GAMING PARTNER</div>
+                    </div>
+                    <div class="vs-partnerBox">
+                    <img src="images/partner_1.png" alt="" />
+                    </div>
+                    <div class="vs-partnerBox">
+                    <img src="images/partner_2.png" alt="" />
+                    </div>
+                    <div class="vs-partnerBox">
+                    <img src="images/partner_3.png" alt="" />
+                    </div>
+                    <div class="vs-partnerBox">
+                    <img src="images/partner_4.png" alt="" />
                     </div>
                 </div>
+                </div>
+            </div>
             </div>
         </div>
-    </div>
-</section>
+        </section>
 
-<!-- login-start -->
-
-<div class="modal fade vs-loginModalMain" id="loginvigdis" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+        <!-- login-start -->
+        <div class="modal fade vs-loginModalMain" id="loginvigdis" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
             <div class="vs-metaLogo">
-                <img src="images/meta_login.png" alt="">
+                <img src="images/meta_login.png" alt="" />
             </div>
             <div class="modal-body">
                 <h4>To CONTINUE ON THIS WEBSITE</h4>
                 <div class="text-center">
-                    <a class="login-trigger" href="#">login with metamask</a>
+                <a class="login-trigger" href="#">login with metamask</a>
                 </div>
                 <p>You are always in control on Riot Racers when using MetaMask.</p>
             </div>
-
+            </div>
         </div>
-    </div>
-</div>
+        </div>
+        <!-- end -->
 
-<!-- end -->
+        <footer>
+        <div class="container">
+            <h4 class="text-center col-md-7 m-auto">
+            <span>The Game of Vigdis</span> provides a comprehensive game economy
+            that uses the power, trust and Coin
+            </h4>
 
-
-<footer>
-    <div class="container">
-        <h4 class="text-center col-md-7 m-auto">
-            <span>The Game of Vigdis</span> provides a comprehensive game economy that uses the power,
-            trust and Coin
-        </h4>
-
-        <div class="vs-appDownload">
+            <div class="vs-appDownload">
             <div class="vs-appDownload-cols">
-                <a href="#"><img src="images/apple.png" alt=""></a>
+                <a href="#"><img src="images/apple.png" alt="" /></a>
                 <span><small>Coming soon on</small> Apple macOS</span>
             </div>
             <div class="vs-appDownload-cols">
-                <a href="#"><img src="images/window.png" alt=""></a>
+                <a href="#"><img src="images/window.png" alt="" /></a>
                 <span><small>Coming soon on</small> Apple macOS</span>
             </div>
+            </div>
+
+            <div class="vs-copyright">Copyright 2022 © TheGamesOfVigdis</div>
         </div>
-
-        <div class="vs-copyright">Copyright 2022 © TheGamesOfVigdis</div>
+        </footer>
     </div>
-</footer>
 
+    <div class="comig-soon-img"></div>
 
-<body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/metamask-onboarding.bundle.js"></script>
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
