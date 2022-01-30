@@ -1698,8 +1698,40 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(../images/coming-soon.png) no-repeat center center/300px;
   z-index: 1;
+  display: flex;
+
+  & > div {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+
+    img {
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    h3 {
+      font-size: 27px;
+      margin-bottom: 22px;
+      font-weight: bold;
+      
+      @media (min-width: 992px) {
+        font-size: 54px;
+        margin-bottom: 45px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 18px;
+      
+      @media (min-width: 992px) {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 .footer-title {
