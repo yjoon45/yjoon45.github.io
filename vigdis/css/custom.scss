@@ -50,44 +50,6 @@ header{
     @media(max-width:991px){
         padding:15px 0;
     }
-    .d-flex{
-        @media(max-width:991px){
-            flex-direction: row-reverse;
-        }
-    }
-    .vs-mobileConnect-btn{
-        display: none;
-        @media(max-width:991px){
-            display: block;
-            a.connectBtn{
-                display: inline-block;
-                padding: 5px 5px;
-                text-transform: uppercase;
-                color: #fff;
-                font-family: 'Vampire Wars';
-                border-radius: 60px;
-                font-size: 14px;
-                font-weight: 300;
-                background: #fef42f;
-                background: -webkit-gradient(linear, left top, left bottom, from(#fef42f), to(#9a401f));
-                background: linear-gradient(to bottom, #fef42f 0%, #9a401f 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 );
-                span{
-                    border: 3px solid #f4c50f;
-                    padding: 4px 12px;
-                    display: inline-block;
-                    border-radius: 60px;
-                    border: 3px solid -moz-linear-gradient(top, #fef42f 0%, #9a401f 100%);
-                    border: 3px solid -webkit-linear-gradient(top, #fef42f 0%, #9a401f 100%);
-                    border: 3px solid linear-gradient(to bottom, #fef42f 0%, #9a401f 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef42f', endColorstr='#9a401f',GradientType=0 );
-                    img{
-                        width: 18px;
-                    }
-                }
-            }
-        }
-    }
     .vs-nav.opennav{
         @media(max-width:991px){
             left: 0;
@@ -204,24 +166,21 @@ header{
         left: 50%;
         top: 25px;
         transform: translate(-50%);
-        @media(max-width:991px){
-            top: 13px;
-            margin: 0 -25px
-        }
         img{
             @media(max-width:991px){
                 width: 100%;
-                max-width: 120px;
+                max-width: 130px;
             }
+        }
+        @media(max-width:991px){
+            position: inherit;
+            transform: inherit;
         }
     }
     .vs-headRight{
         margin-top: 20px;
         display: flex;
         align-items: center;
-        .vs-m-none{
-            display: flex;
-        }
         @media(max-width:991px){
             .vs-m-none{
                 display:none;
@@ -297,7 +256,6 @@ header{
             @media(max-width:991px){
                 display: flex;
                 align-items: center;
-                margin-left: 0;
             }
             .vs-mobBtnNav{
                 display: none;
@@ -308,7 +266,7 @@ header{
                     padding: 17px;
                     background-size: 35px;
                     transition: all 0.2s;
-                    margin-left: 0;
+                    margin-left: 40px;
                 }
             }
             .vs-mobBtnNav.close-nav{
@@ -325,9 +283,6 @@ header{
                 }
             }
             .dropdown{
-                @media(max-width:991px){
-                    display: none;
-                }
                 .dropdown-toggle{
                     display: inline-block;
                     width: 40px;
@@ -387,26 +342,13 @@ header{
     img{
         width: 100%;
     }
-    .vs-mobileBanner{
-        display: none;
-        @media(max-width:767px){
-            display: block;
-            width: 100%;
-        }
-    }
     video{
         width: 100%;
-        @media(max-width:767px){
-            display: none;
-        }
     }
     .vs-banner-trigger {
         position: absolute;
         bottom: 0;
         right: 1%;
-        @media(max-width:767px){
-            display: none;
-        }
 
         button {
             border: 1px solid transparent;
@@ -463,9 +405,6 @@ header{
 .vs-fluidMain{
     padding: 50px 0 30px;
     margin-top: 0;
-    @media(max-width:991px){
-        padding-top: 0;
-    }
     .vs-mob-sizecol-md-4{
         .col-md-4{
             @media(max-width:767px){
@@ -1523,7 +1462,11 @@ footer{
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         background-color: black;
     }
+}
+
+.vs-headRight {
+
 }

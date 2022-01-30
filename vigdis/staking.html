@@ -10,11 +10,6 @@
     <link href="css/custom.css" rel="stylesheet">
 </head>
 <header>
-    <a id="top"></a>
-    <div class="loader">
-        <video class="loader-embed" src="images/vigdis_logo_animation.mp4" autoplay muted></video>
-    </div>
-
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div class="vs-nav">
@@ -25,39 +20,27 @@
                     <li><a href="staking.html">Staking</a></li>
                 </ul>
                 <div class="vs-m-block">
-                    <li><a href="#" class="wallet"><img src="images/wallet.png" alt=""> 8.5K</a></li>
+                    <li>
+                        <a href="#" class="connectBtn" data-bs-toggle="modal" data-bs-target="#loginvigdis">
+                            <span><img src="images/connect.png" alt="">Connect wallet</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="wallet"><img src="images/wallet.png" alt=""> <span>8.5K</span></a>
+                    </li>
                 </div>
             </div>
             <div class="vs-logo">
                 <img src="images/logo.png" alt="">
             </div>
-            <li class="vs-mobileConnect-btn">
-                <a href="#" class="connectBtn" data-bs-toggle="modal" data-bs-target="#loginvigdis">
-                    <span><img src="images/connect.png" alt=""> Connect</span>
-                </a>
-            </li>
             <div class="vs-headRight">
-                <div class="vs-m-none">
+                <ul class="wallet-list vs-m-none">
                     <li>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#loginvigdis" class="connectBtn">
-                            <span><img src="images/connect.png" alt=""> Connect</span>
+                            <span><img src="images/connect.png" alt=""> Connect wallet</span>
                         </a>
                     </li>
-                    <li><a href="#" class="wallet"><img src="images/wallet.png" alt=""> 8.5K</a></li>
-                </div>
-                <div class="vs-profileUser">
-                    <div class="dropdown">
-                        <button class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/user.png" alt="">
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">View Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                        </ul>
-                    </div>
-                    <div class="vs-mobBtnNav" id="sdhmob-nav"></div>
-                </div>
+                </ul>
             </div>
         </div>
     </div>
