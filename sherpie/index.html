@@ -11,54 +11,110 @@
   <body id="top">
     <header class="header">
       <nav
-        class="navigation pt-lg-39 position-relative justify-content-between d-flex align-items-start px-lg-86"
+        class="navigation position-relative justify-content-md-between justify-content-center d-flex align-items-start text-center"
       >
+        <button
+          type="button"
+          class="navigation-trigger position-absolute top-50 translate-middle-y bg-transparent border-0 p-0 w-26 h-26 d-md-none d-block start-0 ms-20"
+        >
+          <svg viewBox="0 0 384 384" class="w-26 h-26">
+            <g>
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                fill="#B9633C"
+              ></path>
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                fill="#B9633C"
+              ></path>
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                fill="#B9633C"
+              ></path>
+            </g>
+          </svg>
+        </button>
         <a
-          class="fs-lg-28 flex-grow-1 px-lg-54 hover-color-orange-900 color-orange text-decoration-none"
+          class="navigation-link hover-color-orange-900 color-orange text-decoration-none d-none d-md-block"
           href="#our-game-section"
           >Our game</a
         >
         <a
-          class="fs-lg-28 flex-grow-1 px-lg-54 hover-color-orange-900 color-orange text-decoration-none"
+          class="navigation-link hover-color-orange-900 color-orange text-decoration-none d-none d-md-block"
           href="#section-tokenomic"
           >Tokenomic</a
         >
-        <div class="px-lg-54 flex-grow-1">
-          <a
-            href="#top"
-            class="d-block w-lg-150 position-absolute start-50 translate-middle-x"
-          >
-            <img class="d-block" src="images/logo.png" alt="" />
+        <div class="navigation-logo position-relative">
+          <a href="#top" class="d-block w-75 w-lg-150 w-md-110 mx-auto">
+            <img class="d-block img-fluid" src="images/logo.png" alt="" />
           </a>
         </div>
         <a
-          class="fs-lg-28 flex-grow-1 px-lg-54 hover-color-orange-900 color-orange text-decoration-none"
+          class="navigation-link hover-color-orange-900 color-orange text-decoration-none d-none d-md-block"
           href="#section-partners"
           >Partners</a
         >
         <a
-          class="fs-lg-28 flex-grow-1 px-lg-54 hover-color-orange-900 color-orange text-decoration-none"
+          class="navigation-link hover-color-orange-900 color-orange text-decoration-none d-none d-md-block"
           href="#"
           >Earn</a
         >
+        <div
+          class="navigation-dropdown flex-column justify-content-center d-md-none position-absolute start-50 translate-middle-x w-280"
+        >
+          <a
+            class="text-center d-block pb-13 fs-28 hover-color-orange color-orange-700 text-decoration-none"
+            href="#our-game-section"
+            >Our game</a
+          >
+          <a
+            class="text-center d-block pb-13 fs-28 hover-color-orange color-orange-700 text-decoration-none"
+            href="#section-tokenomic"
+            >Tokenomic</a
+          >
+          <a
+            class="text-center d-block pb-13 fs-28 hover-color-orange color-orange-700 text-decoration-none"
+            href="#section-partners"
+            >Partners</a
+          >
+          <a
+            class="text-center d-block fs-28 hover-color-orange color-orange-700 text-decoration-none"
+            href="#"
+            >Earn</a
+          >
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="position-relative">
-        <img class="d-block img-fluid" src="images/image-3938.jpeg" alt="" />
+        <picture>
+          <source
+            srcset="images/image-3938-sm.jpeg"
+            media="(max-width: 767px)"
+          />
+          <source srcset="images/image-3938.jpeg" media="(min-width: 768px)" />
+          <img class="d-block img-fluid" src="images/image-3938.jpeg" alt="" />
+        </picture>
         <div
-          class="position-absolute top-0 start-0 w-100 h-100 pt-lg-90 px-lg-20"
+          class="position-absolute top-0 start-0 w-100 h-100 pt-15 pt-md-5 pt-xl-90 px-xl-20"
         >
           <div class="container">
             <div class="row">
-              <div class="col-lg-5 ms-lg-auto">
+              <div
+                class="col-md-6 col-lg-5 ms-md-auto text-center text-md-start"
+              >
                 <h2
-                  class="fs-xxl-84 fs-lg-74 mb-lg-13 color-orange text-uppercase ff-heading"
+                  class="fs-xxl-84 fs-50 fs-xl-74 mb-lg-13 mb-10 color-orange text-uppercase ff-heading"
                 >
                   introduction
                 </h2>
-                <p class="color-orange-900 fs-lg-20 fs-xxl-26 mb-0">
+                <p
+                  class="color-orange-900 fs-16 fs-md-16 fs-lg-18 fs-xl-20 fs-xxl-26 mb-0"
+                >
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
@@ -69,62 +125,62 @@
         </div>
       </section>
 
-      <section class="bg-pattern pt-lg-90 pb-lg-70">
+      <section class="bg-pattern pt-30 pb-60 pt-md-5 pt-xl-90 pb-xl-70">
         <h2
-          class="fs-xxl-84 fs-lg-74 mb-lg-66 color-orange text-center text-uppercase ff-heading"
+          class="fs-xxl-84 fs-50 fs-xl-74 mb-lg-60 mb-30 color-orange text-uppercase ff-heading text-center"
         >
           game feature
         </h2>
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 text-center pe-lg-60">
+            <div class="col-lg-4 text-center mb-lg-0 mb-40 pe-lg-60">
               <img
-                class="d-block mx-auto mb-lg-20"
+                class="d-block mx-auto mb-20"
                 src="images/feature1.png"
                 alt=""
               />
               <h3
-                class="ff-heading fs-lg-53 color-orange-700 mb-lg-40 lh-sm h-lg-132"
+                class="ff-heading fs-lg-53 fs-36 mb-20 color-orange-700 mb-lg-40 lh-sm h-lg-132"
               >
-                Take care <br />
+                Take care <br class="d-none d-md-block" />
                 your pet
               </h3>
-              <p class="fs-lg-20 fs-xxl-26 mb-0 color-orange-900">
+              <p class="fs-16 fs-md-18 fs-xxl-26 mb-0 color-orange-900">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s.
               </p>
             </div>
-            <div class="col-lg-4 text-center px-lg-60">
+            <div class="col-lg-4 text-center mb-lg-0 mb-40 px-lg-60">
               <img
-                class="d-block mx-auto mb-lg-20"
+                class="d-block mx-auto mb-20"
                 src="images/feature2.png"
                 alt=""
               />
               <h3
-                class="ff-heading fs-lg-53 color-orange-700 mb-lg-40 lh-sm h-lg-132"
+                class="ff-heading fs-lg-53 fs-36 mb-20 color-orange-700 mb-lg-40 lh-sm h-lg-132"
               >
                 Breeding
               </h3>
-              <p class="fs-lg-20 fs-xxl-26 mb-0 color-orange-900">
+              <p class="fs-16 fs-md-18 fs-xxl-26 mb-0 color-orange-900">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s.
               </p>
             </div>
-            <div class="col-lg-4 text-center ps-lg-60">
+            <div class="col-lg-4 text-center mb-lg-0 mb-40 ps-lg-60">
               <img
-                class="d-block mx-auto mb-lg-20"
+                class="d-block mx-auto mb-20"
                 src="images/feature3.png"
                 alt=""
               />
               <h3
-                class="ff-heading fs-lg-53 color-orange-700 mb-lg-40 lh-sm h-lg-132"
+                class="ff-heading fs-lg-53 fs-36 mb-20 color-orange-700 mb-lg-40 lh-sm h-lg-132"
               >
-                Explore <br />
+                Explore <br class="d-none d-md-block" />
                 your town
               </h3>
-              <p class="fs-lg-20 fs-xxl-26 mb-0 color-orange-900">
+              <p class="fs-16 fs-md-18 fs-xxl-26 mb-0 color-orange-900">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s.
@@ -137,12 +193,14 @@
       <section id="our-game-section" class="bg-ground section-ourgame">
         <div class="container">
           <h2
-            class="fs-xxl-84 fs-lg-74 color-white text-center text-uppercase ff-heading title"
+            class="fs-xxl-84 fs-50 fs-xl-74 color-white text-uppercase ff-heading text-center title"
           >
             our game
           </h2>
           <div class="col-lg-9 mx-auto">
-            <p class="text-center color-white fs-lg-20 fs-xxl-26 line">
+            <p
+              class="text-center color-white fs-16 fs-md-18 fs-lg-20 fs-xxl-26 line"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -152,63 +210,67 @@
           </div>
           <section class="position-relative d-table mx-auto">
             <h2
-              class="position-absolute top-0 start-0 end-0 fs-lg-57 color-orange-300 text-center text-uppercase ff-heading pt-lg-20 pe-lg-70"
+              class="position-absolute top-0 start-0 end-0 fs-lg-57 fs-md-30 fs-20 color-orange-300 text-center text-uppercase ff-heading pt-5 pt-md-20 pe-lg-70"
             >
               proof &nbsp; of &nbsp; lock
             </h2>
-            <img class="d-block mx-auto" src="images/lock.png" alt="" />
+            <img
+              class="d-block img-fluid mx-auto"
+              src="images/lock.png"
+              alt=""
+            />
           </section>
         </div>
       </section>
 
-      <div class="bg-pattern pt-lg-60 pb-lg-70">
-        <section id="section-tokenomic" class="container mb-lg-195">
+      <div class="bg-pattern pt-30 pb-40 pt-lg-60 pb-lg-70">
+        <section id="section-tokenomic" class="container mb-100 mb-lg-195">
           <h2
-            class="fs-xxl-84 fs-lg-74 color-orange text-center text-uppercase ff-heading mb-lg-100"
+            class="fs-xxl-84 fs-50 fs-xl-74 color-orange text-center text-uppercase ff-heading mb-50 mb-lg-100"
           >
             tokenomic
           </h2>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6 mb-50 mb-md-0">
               <img
-                class="d-block mx-auto mb-lg-77"
+                class="d-block mx-auto mb-50 img-fluid w-280 w-md-auto mb-lg-77"
                 src="images/sharpei.png"
                 alt=""
               />
-              <ul class="list-unstyled fs-lg-20 fs-xxl-24 color-orange">
-                <li class="d-flex align-items-start mb-lg-15">
+              <ul class="list-unstyled fs-18 fs-md-20 fs-xxl-24 color-orange">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   2% Public sale
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   5% Seed sale (P2E)
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   7,50% Liquidity for BSC \ AVAX chains
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   7,50% Advisors and Incubators
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   10% Rewards for Liquidity Providers Escrow with Vesting
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   12% Private sale
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   14,50% Team
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   17% Development and Marketing Funds
                 </li>
-                <li class="d-flex align-items-cent15">
+                <li class="d-flex align-items-center">
                   <span class="me-5">&#9679;</span>
                   24,50% In-game Rewards (P2E)
                 </li>
@@ -216,44 +278,44 @@
             </div>
             <div class="col-lg-6">
               <img
-                class="d-block mx-auto mb-lg-77"
+                class="d-block mx-auto mb-50 img-fluid w-280 w-md-auto mb-lg-77"
                 src="images/puppy.png"
                 alt=""
               />
-              <ul class="list-unstyled fs-lg-24 color-orange">
-                <li class="d-flex align-items-start mb-lg-15">
+              <ul class="list-unstyled fs-18 fs-md-20 fs-xxl-24 color-orange">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   2% Public sale
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   5% Seed sale (P2E)
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   7,50% Liquidity for BSC \ AVAX chains
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   7,50% Advisors and Incubators
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   10% Rewards for Liquidity Providers Escrow with Vesting
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   12% Private sale
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   14,50% Team
                 </li>
-                <li class="d-flex align-items-start mb-lg-15">
+                <li class="d-flex align-items-start mb-15">
                   <span class="me-10">&#9679;</span>
                   17% Development and Marketing Funds
                 </li>
-                <li class="d-flex align-items-cent15">
+                <li class="d-flex align-items-center">
                   <span class="me-5">&#9679;</span>
                   24,50% In-game Rewards (P2E)
                 </li>
@@ -262,35 +324,35 @@
           </div>
         </section>
 
-        <section class="container mb-lg-195">
+        <section class="container mb-100 mb-lg-195">
           <div
-            class="border-4 py-lg-20 px-30 bg-orange-400-alpha-300 border w-1150-max mx-auto border-4 border-color-orange-900 radius-68"
+            class="border-4 py-20 px-30 bg-orange-400-alpha-300 border w-1150-max mx-auto border-4 border-color-orange-900 radius-68"
           >
             <h2
-              class="fs-lg-80 color-orange text-center text-uppercase ff-heading mb-lg-100"
+              class="fs-lg-80 fs-50 color-orange text-center text-uppercase ff-heading mb-40 mb-lg-100"
             >
               trade on
             </h2>
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <a
                   href="#"
-                  class="d-block rounded-3 py-lg-20 border border-2 hover-border-color-orange border-transparent"
+                  class="d-block rounded-3 py-20 border border-2 hover-border-color-orange border-transparent"
                 >
                   <img
-                    class="d-block mx-auto img-fluid h-lg-173 object-fit-cover"
+                    class="d-block mx-auto img-fluid h-md-140 h-lg-173 object-fit-cover"
                     src="images/pancakeswap.png"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <a
                   href="#"
-                  class="d-block rounded-3 py-lg-20 border border-2 hover-border-color-orange border-transparent"
+                  class="d-block rounded-3 py-20 border border-2 hover-border-color-orange border-transparent"
                 >
                   <img
-                    class="d-block mx-auto img-fluid h-lg-173 object-fit-cover"
+                    class="d-block mx-auto img-fluid h-md-140 h-lg-173 object-fit-cover"
                     src="images/moonliftcapital.png"
                     alt=""
                   />
@@ -300,35 +362,42 @@
           </div>
         </section>
 
-        <section id="section-partners" class="container">
+        <section id="section-partners" class="container px-0">
           <h2
-            class="fs-xxl-84 fs-lg-74 color-orange text-center text-uppercase ff-heading mb-lg-50"
+            class="fs-xxl-84 fs-xl-74 fs-50 color-orange text-center text-uppercase ff-heading mb-10 mb-lg-50"
           >
             partners
           </h2>
           <div
             class="d-table mx-auto w-1490-max position-relative partner-section"
           >
-            <img class="d-block img-fluid" src="images/partnersbg.png" alt="" />
+            <img
+              class="d-block img-fluid object-fit-cover h-220 h-md-auto"
+              src="images/partnersbg.png"
+              alt=""
+            />
             <div class="position-absolute partner-section-overlay">
-              <div class="partner-logo-carousel mb-lg-40">
+              <div class="partner-logo-carousel mb-xl-40">
                 <div class="px-10">
-                  <img class="d-block img-fluid" src="images/bscarmy.png" alt="" />
+                  <img
+                    class="d-block img-fluid mx-auto object-fit-contain h-50 h-md-70"
+                    src="images/bscarmy.png"
+                    alt=""
+                  />
                 </div>
                 <div class="px-10">
-                  <img class="d-block img-fluid" src="images/moonlift.png" alt="" />
+                  <img
+                    class="d-block img-fluid mx-auto object-fit-contain h-80 h-md-130"
+                    src="images/moonlift.png"
+                    alt=""
+                  />
                 </div>
                 <div class="px-10">
-                  <img class="d-block img-fluid" src="images/anyswap.png" alt="" />
-                </div>
-                <div class="px-10">
-                  <img class="d-block img-fluid" src="images/bscarmy.png" alt="" />
-                </div>
-                <div class="px-10">
-                  <img class="d-block img-fluid" src="images/moonlift.png" alt="" />
-                </div>
-                <div class="px-10">
-                  <img class="d-block img-fluid" src="images/anyswap.png" alt="" />
+                  <img
+                    class="d-block img-fluid mx-auto object-fit-contain h-50 h-md-70"
+                    src="images/anyswap.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="partner-logo-dots"></div>
@@ -339,36 +408,77 @@
     </main>
 
     <footer class="footer position-relative">
-      <img class="d-block img-fluid" src="images/footerbg.png" alt="">
-      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end pb-lg-60">
+      <picture>
+        <source srcset="images/footerbg-sm.png" media="(max-width: 767px)" />
+        <source srcset="images/footerbg.png" media="(min-width: 768px)" />
+        <img class="d-block img-fluid" src="images/footerbg.png" alt="" />
+      </picture>
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end pb-20 pb-xl-60"
+      >
         <div class="container">
-          <div class="row align-items-end">
-            <div class="col-auto">
-              <img class="d-block img-fluid" src="images/logoSharpei.png" alt="">
+          <div class="row align-items-md-end">
+            <div class="col-auto d-md-block d-none">
+              <img
+                class="d-block img-fluid w-210 w-lg-auto"
+                src="images/logoSharpei.png"
+                alt=""
+              />
             </div>
             <div class="col">
-              <p class="mb-20 text-center color-white fs-lg-20 fs-xxl-23">
-                Let’s join force and keep following My SharpeiGotchi’s latest events!
+              <p
+                class="mb-lg-20 mb-5 text-center color-white fs-18 fs-lg-20 fs-xxl-23"
+              >
+                Let’s join force and keep following My SharpeiGotchi’s latest
+                events!
               </p>
               <div class="d-flex justify-content-center flex-wrap">
-                <div class="px-lg-20">
-                  <a href="#" class="d-block w-72 h-72 rounded-circle d-flex bg-orange hover-bg-orange-700">
-                    <img class="d-block m-auto" src="images/tw.png" alt="">
+                <div class="px-10 px-lg-20">
+                  <a
+                    href="#"
+                    class="d-block w-52 h-52 w-lg-72 h-lg-72 rounded-circle d-flex bg-orange hover-bg-orange-700"
+                  >
+                    <img
+                      class="d-block m-auto h-29 h-lg-auto img-fluid"
+                      src="images/tw.png"
+                      alt=""
+                    />
                   </a>
                 </div>
-                <div class="px-lg-20">
-                  <a href="#" class="d-block w-72 h-72 rounded-circle d-flex bg-orange hover-bg-orange-700">
-                    <img class="d-block m-auto" src="images/tel.png" alt="">
+                <div class="px-10 px-lg-20">
+                  <a
+                    href="#"
+                    class="d-block w-52 h-52 w-lg-72 h-lg-72 rounded-circle d-flex bg-orange hover-bg-orange-700"
+                  >
+                    <img
+                      class="d-block m-auto h-29 h-lg-auto img-fluid"
+                      src="images/tel.png"
+                      alt=""
+                    />
                   </a>
                 </div>
-                <div class="px-lg-20">
-                  <a href="#" class="d-block w-72 h-72 rounded-circle d-flex bg-orange hover-bg-orange-700">
-                    <img class="d-block m-auto" src="images/di.png" alt="">
+                <div class="px-10 px-lg-20">
+                  <a
+                    href="#"
+                    class="d-block w-52 h-52 w-lg-72 h-lg-72 rounded-circle d-flex bg-orange hover-bg-orange-700"
+                  >
+                    <img
+                      class="d-block m-auto h-29 h-lg-auto img-fluid"
+                      src="images/di.png"
+                      alt=""
+                    />
                   </a>
                 </div>
-                <div class="px-lg-20">
-                  <a href="#" class="d-block w-72 h-72 rounded-circle d-flex bg-orange hover-bg-orange-700">
-                    <img class="d-block m-auto" src="images/fb.png" alt="">
+                <div class="px-10 px-lg-20">
+                  <a
+                    href="#"
+                    class="d-block w-52 h-52 w-lg-72 h-lg-72 rounded-circle d-flex bg-orange hover-bg-orange-700"
+                  >
+                    <img
+                      class="d-block m-auto h-29 h-lg-auto img-fluid"
+                      src="images/fb.png"
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
