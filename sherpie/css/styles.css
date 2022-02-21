@@ -12671,27 +12671,6 @@ textarea.form-control-lg {
             box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
   }
 }
-.header {
-  background: url(../images/header-bg-sm.jpeg) no-repeat top center/cover;
-  height: 740px;
-}
-@media (min-width: 768px) {
-  .header {
-    background: url(../images/header-bg.jpeg) no-repeat top center/cover;
-    height: 550px;
-  }
-}
-@media (min-width: 992px) {
-  .header {
-    height: 780px;
-  }
-}
-@media (min-width: 1200px) {
-  .header {
-    height: 1176px;
-  }
-}
-
 .navigation {
   height: 70px;
   padding: 8px 10px 0;
@@ -12771,34 +12750,29 @@ textarea.form-control-lg {
 }
 
 .section-ourgame {
-  background: url(../images/bg-3029-sm.jpeg) no-repeat top center/cover;
   padding-top: 85px;
-  height: 1100px;
 }
 @media (min-width: 768px) {
   .section-ourgame {
-    background: url(../images/bg-3029.jpeg) no-repeat top center/cover;
     padding-top: 190px;
-    height: 1984px;
   }
 }
 @media (min-width: 1200px) {
   .section-ourgame {
-    padding-top: 410px;
-    height: 3474px;
+    padding-top: 25%;
   }
 }
 .section-ourgame .title {
-  margin-bottom: 425px;
+  margin-bottom: 108vw;
 }
 @media (min-width: 768px) {
   .section-ourgame .title {
-    margin-bottom: 725px;
+    margin-bottom: 570px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .section-ourgame .title {
-    margin-bottom: 1375px;
+    margin-bottom: 70vw;
   }
 }
 .section-ourgame .line {
@@ -70271,4 +70245,3 @@ textarea.form-control-lg {
 .hover-border-color-orange:hover {
   border-color: #E87743 !important;
 }
-/*# sourceMappingURL=styles.css.map */
