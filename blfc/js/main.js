@@ -9,4 +9,6 @@ function toggleNav() {
 $('.blfc-mobileBtn').addEventListener('click', toggleNav);
 $('.blfc-closeMobileBtn').addEventListener('click', toggleNav);
 
-AOS.init();
+AOS.init({
+  once: true,
+});

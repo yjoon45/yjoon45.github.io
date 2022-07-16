@@ -293,6 +293,23 @@ button:not(:disabled),
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
+
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+}
+
+@media (min-width: 576px) {
+
+  .col-sm-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 25%;
+  }
+}
 @media (min-width: 768px) {
 
   .col-md-4 {
@@ -463,14 +480,42 @@ button:not(:disabled),
   height: 100%;
 }
 
+.ratio-1x1 {
+  --bs-aspect-ratio: 100%;
+}
+
 .ratio-16x9 {
   --bs-aspect-ratio: 56.25%;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.d-block {
+  display: block !important;
 }
 
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.start-0 {
+  left: 0 !important;
 }
 
 .border-top {
@@ -511,9 +556,17 @@ button:not(:disabled),
   text-align: center !important;
 }
 
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
 /* rtl:begin:remove */
 
 /* rtl:end:remove */
+
+.rounded-3 {
+  border-radius: 0.3rem !important;
+}
 body[data-aos-duration="50"] [data-aos], [data-aos][data-aos][data-aos-duration="50"] {
   -webkit-transition-duration: 50ms;
           transition-duration: 50ms;
@@ -1658,10 +1711,16 @@ header .blfc-navbar .bflc-nav ul li a:hover {
 .blfc-socialBtn {
   position: fixed;
   top: 33%;
-  right: 35px;
+  right: 0;
   width: 100%;
   max-width: 50px;
   text-align: center;
+  background-color: black;
+}
+@media (min-width: 1200px) {
+  .blfc-socialBtn {
+    right: 35px;
+  }
 }
 .blfc-socialBtn a {
   display: block;
@@ -1714,22 +1773,16 @@ header .blfc-navbar .bflc-nav ul li a:hover {
   background: #838383;
   border-radius: 8px;
   height: 320px;
-  margin-right: 80px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .bflc-containerMain .bflc-clubBox .bflc-clubbox-cols {
     height: 180px;
-    margin-right: 20px;
   }
 }
-@media (max-width: 1199px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .bflc-containerMain .bflc-clubBox .bflc-clubbox-cols {
-    margin-right: 0;
     margin-bottom: 20px;
   }
-}
-.bflc-containerMain .bflc-clubBox .bflc-clubbox-cols:last-child {
-  margin-right: 0;
 }
 .bflc-containerMain .blfc-first-md {
   margin: 80px 0 30px;
@@ -2332,4 +2385,17 @@ header .blfc-navbar .bflc-nav ul li a:hover {
 .blfc-theFarmerMain .blfc-farmerCols .blfc-farmerImg img {
   width: 100%;
   border-radius: 10px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }

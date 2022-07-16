@@ -392,10 +392,15 @@ header {
 .blfc-socialBtn {
   position: fixed;
   top: 33%;
-  right: 35px;
+  right: 0;
   width: 100%;
   max-width: 50px;
   text-align: center;
+  background-color: black;
+
+  @media (min-width: 1200px) {
+    right: 35px;
+  }
 
   a {
     display: block;
@@ -461,20 +466,13 @@ header {
       background: #838383;
       border-radius: 8px;
       height: 320px;
-      margin-right: 80px;
 
-      @media (max-width: 1199px) {
+      @media (max-width: 991px) {
         height: 180px;
-        margin-right: 20px;
-
-        @media (max-width: 767px) {
-          margin-right: 0;
-          margin-bottom: 20px;
-        }
       }
 
-      &:last-child {
-        margin-right: 0;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
       }
     }
   }
@@ -1082,4 +1080,16 @@ header {
       }
     }
   }
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.object-cover {
+  object-fit: cover;
 }
