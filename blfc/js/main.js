@@ -2,7 +2,9 @@ function $(el) {
   return document.querySelector(el);
 }
 
-function toggleNav() {
+function toggleNav(e) {
+  e.stopPropagation();
+
   $('.bflc-nav').classList.toggle('opennav');
 }
 
