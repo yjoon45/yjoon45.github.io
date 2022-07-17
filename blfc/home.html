@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bored Liama Farm Club</title>
-
     <link rel="stylesheet" href="css/custom.bundle.css" />
   </head>
 
   <body>
-    <header class="container">
+    <header class="container header">
       <div class="blfc-navbar">
         <div class="d-flex align-items-center justify-content-between">
           <a href="index.html" class="bflc-logo">
-            <img loading="lazy" src="img/logo.png" class="img-fluid" alt="" />
+            <img
+              loading="lazy"
+              src="img/logo.png"
+              class="img-fluid"
+              alt="Bored LLama Farm Club"
+            />
           </a>
-          <button class="blfc-mobileBtn">
+          <button type="button" class="blfc-mobileBtn">
+            <i class="visually-hidden">Toggle nav</i>
             <span></span>
             <span></span>
             <span></span>
@@ -31,11 +36,11 @@
               />
             </button>
             <ul>
-              <li><a href="#">BUY A LLAMA</a></li>
-              <li><a href="#">Minting</a></li>
-              <li><a href="#">Roadmap</a></li>
-              <li><a href="#">Farmers</a></li>
-              <li><a href="#">Barn</a></li>
+              <li><a href="#section-buy">buy a llama</a></li>
+              <li><a href="#section-minting">Minting</a></li>
+              <li><a href="#section-roadmap">Roadmap</a></li>
+              <li><a href="#section-farmers">Farmers</a></li>
+              <li><a href="#section-barn">Barn</a></li>
             </ul>
           </div>
         </div>
@@ -128,14 +133,14 @@
           </div>
         </section>
 
-        <section class="blfc-first-md">
+        <section id="section-minting" class="blfc-first-md">
           <div class="title">
             FAIR <br />
             MINTING
           </div>
           <article>
             <p>
-              here are no hidden secrets within the BLFC club. Buying a Llama
+              There are no hidden secrets within the BLFC club. Buying a Llama
               costs 0.08 ETH. No early sales, no price tiers. Being part of the
               most exclusive barn in the world costs the same for everyone.
             </p>
@@ -146,20 +151,17 @@
           </article>
         </section>
 
-        <section class="blfc-second-md">
+        <section id="section-buy" class="blfc-second-md">
           <div class="blfc-leftLogo">
             <img loading="lazy" src="img/logo.png" class="img-fluid" alt="" />
           </div>
           <div class="blfc-rightPanel">
             <div class="title">Buy a Llama!</div>
             <article>
-              <p>
-                The minting is currently live. To get your Bored Llama, click
-                the MINT button and connect your wallet.
-              </p>
+              <p>The mint is not live yet.</p>
             </article>
-            <a href="#" class="text-decoration-none"
-              >Mint
+            <a class="text-decoration-none"
+              >Comming soon
               <img
                 loading="lazy"
                 src="img/right-arrow.png"
@@ -207,7 +209,7 @@
           </div>
         </section>
 
-        <div class="blfc-welcomeBorn-main">
+        <div id="section-barn" class="blfc-welcomeBorn-main">
           <div class="title">
             Welcome to the
             <span
@@ -235,31 +237,59 @@
             </p>
           </article>
 
-          <div class="blfc-welcomeBorn-flex">
+          <div class="row gx-lg-5">
             <div
-              class="blfc-welcomeBorn-cols"
+              class="col-lg-3 col-6 mb-lg-0 mb-3"
               data-aos="fade-in"
               data-aos-delay="50"
-            ></div>
+            >
+              <img
+                class="img-fluid rounded-circle d-block mx-auto"
+                src="img/circle-1.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
             <div
-              class="blfc-welcomeBorn-cols"
+              class="col-lg-3 col-6 mb-lg-0 mb-3"
               data-aos="fade-in"
               data-aos-delay="100"
-            ></div>
+            >
+              <img
+                class="img-fluid rounded-circle d-block mx-auto"
+                src="img/circle-2.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
             <div
-              class="blfc-welcomeBorn-cols"
+              class="col-lg-3 col-6 mb-lg-0 mb-3"
               data-aos="fade-in"
               data-aos-delay="150"
-            ></div>
+            >
+              <img
+                class="img-fluid rounded-circle d-block mx-auto"
+                src="img/circle-3.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
             <div
-              class="blfc-welcomeBorn-cols"
+              class="col-lg-3 col-6 mb-lg-0 mb-3"
               data-aos="fade-in"
               data-aos-delay="200"
-            ></div>
+            >
+              <img
+                class="img-fluid rounded-circle d-block mx-auto"
+                src="img/circle-4.jpeg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
 
-        <div class="blfc-roadmapMain">
+        <div id="section-roadmap" class="blfc-roadmapMain">
           <div class="title text-center">THE BLFC ROADMAP</div>
           <p class="text-center">
             Our roadmap is based on the success of the sale. Once we reach a
@@ -349,7 +379,7 @@
           </div>
         </div>
 
-        <div class="blfc-theFarmerMain">
+        <div id="section-farmers" class="blfc-theFarmerMain">
           <div class="d-flex align-items-end">
             <h2>
               <i
@@ -362,7 +392,7 @@
               something more exclusive, more rewarding.
             </p>
           </div>
-          <div class="row mt-5">
+          <div class="row gx-lg-5 mt-5">
             <div class="col-md-4">
               <div class="blfc-farmerCols">
                 <p>
