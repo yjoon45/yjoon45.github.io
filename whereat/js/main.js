@@ -1,3 +1,5 @@
+import LocomotiveScroll from "locomotive-scroll";
+
 $(function() {
   $('.tokenSlide').slick({
     centerMode: true,
@@ -96,4 +98,12 @@ $(function() {
   $('.closeNav').on('click', function () {
     $('.wh-navbar').removeClass('mobileNav');
   });
+
+  $(window).on('load', function() {
+    new LocomotiveScroll({
+      el: $('[data-scroll-container]').get(0),
+      smooth: true,
+    });
+  });  
 });
+
