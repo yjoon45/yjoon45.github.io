@@ -1,4 +1,6 @@
-$(function() {
+import LocomotiveScroll from 'locomotive-scroll';
+
+$(function () {
   $('.tokenSlide').slick({
     centerMode: true,
     centerPadding: '200px',
@@ -66,7 +68,7 @@ $(function () {
   });
 });
 
-$(function() {
+$(function () {
   $('.exploreAppSlide').slick({
     dots: false,
     infinite: true,
@@ -87,8 +89,7 @@ $(function() {
   });
 });
 
-
-$(function() {
+$(function () {
   $('#showNav').on('click', function () {
     $('.wh-navbar').addClass('mobileNav');
   });
@@ -96,4 +97,15 @@ $(function() {
   $('.closeNav').on('click', function () {
     $('.wh-navbar').removeClass('mobileNav');
   });
+});
+
+document.addEventListener('readystatechange', function () {
+  if (document.readyState === 'complete') {
+    setTimeout(() => {
+      new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+      });
+    }, 1000);
+  }
 });
