@@ -4,7 +4,9 @@
 
 @import 'slick.scss';
 @import 'slick-theme.scss';
-@import 'mainparallax.scss';
+// @import 'mainparallax.scss';
+
+@import '../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 
 html,
 body {

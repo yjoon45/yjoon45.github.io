@@ -1,4 +1,3 @@
-
 $(function() {
   $('.tokenSlide').slick({
     centerMode: true,
