@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhereAt</title>
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.bundle.css" />
   </head>
 
   <body>
     <div class="o-scroll" id="js-scroll" data-scroll-container>
       <section class="banner" data-scroll-section id="header">
-        <div
-          class="wh-navbar"
-          data-scroll
-          data-scroll-speed="-10"
-          data-scroll-position="top"
-        >
+        <div class="wh-navbar" data-scroll>
           <ul class="list-unstyled">
             <li><a class="text-decoration-none" href="#">WHITEPAPER</a></li>
             <li><a class="text-decoration-none" href="#">LIGHTPAPER</a></li>
             <li><a class="text-decoration-none" href="#">CONTACT</a></li>
           </ul>
-          <button class="closeNav">
-            <img loading="auto" src="images/close.png" alt="" />
+          <button class="closeNav bg-transparent border-0">
+            <img src="images/close.png" alt="" />
           </button>
         </div>
         <div class="mobilNav" id="showNav">
-          <button>
+          <button class="bg-transparent border-0" type="button">
             <span></span>
             <span></span>
             <span></span>
@@ -35,26 +36,31 @@
         </div>
         <span class="cludBg"><img src="images/banner-cloud.png" alt="" /></span>
         <div class="banner-mobile">
-          <img src="images/mobile-banner.png" alt="" />
+          <div class="position-relative">
+            <img src="images/mobile-banner.png" alt="" class="d-block w-100" />
+            <img
+              class="position-absolute flash-img flash-animation"
+              src="images/flash.png"
+              alt=""
+            />
+            <img
+              class="position-absolute flash-img flash-img-2 flash-animation"
+              src="images/flash.png"
+              alt=""
+            />
+          </div>
         </div>
         <div
           class="banner-bg-1"
           data-scroll
-          data-scroll-speed="-15"
+          data-scroll-speed="-12"
           data-scroll-position="top"
           data-scroll-target="#header"
           data-scroll-repeat
         >
           <img src="images/banner-bg-1.png" alt="" />
         </div>
-        <div
-          class="banner-bg-2"
-          data-scroll
-          data-scroll-speed="-1"
-          data-scroll-position="top"
-          data-scroll-target="#header"
-          data-scroll-repeat
-        >
+        <div class="banner-bg-2" data-scroll data-scroll-speed="1">
           <img src="images/banner-bg-2.png" alt="" />
         </div>
         <div
@@ -87,7 +93,7 @@
           <div
             class="title text-center"
             data-scroll
-            data-scroll-speed="2"
+            data-scroll-speed="1"
             data-scroll-call="test"
           >
             Rate-to-Earn
@@ -97,7 +103,7 @@
             <div
               class="rateEarn-sbtitle"
               data-scroll
-              data-scroll-speed="2"
+              data-scroll-speed="1"
               data-scroll-call="test"
             >
               #Web3 <br />
@@ -108,33 +114,32 @@
               BNBChain
             </div>
             <div class="rateEarn-img" data-scroll data-scroll-offset="200">
-              <img loading="auto" src="images/rate-img.png" alt="" />
+              <img src="images/rate-img.png" alt="" />
             </div>
             <div
               class="rateEarn-text"
               data-scroll
-              data-scroll-speed="2"
+              data-scroll-speed="1"
               data-scroll-call="test"
             >
               <li>
-                <img loading="auto" src="images/one.png" alt="" /> First
-                Rate-to-Earn concept on the market
+                <img src="images/one.png" alt="" /> First Rate-to-Earn concept
+                on the market
               </li>
               <li>
-                <img loading="auto" src="images/two.png" alt="" /> GameFi
-                Elements and in-game digital assets
+                <img src="images/two.png" alt="" /> GameFi Elements and in-game
+                digital assets
               </li>
               <li>
-                <img loading="auto" src="images/three.png" alt="" /> NFT
-                marketplace and Global and local leaderboards
+                <img src="images/three.png" alt="" /> NFT marketplace and Global
+                and local leaderboards
               </li>
             </div>
           </div>
           <div class="rateEart-sendEmail">
             <h3>Join the BETA waitinglist</h3>
             <button>
-              <img loading="auto" src="images/sent-icon.png" alt="" /> Send
-              Email
+              <img src="images/sent-icon.png" alt="" /> Send Email
             </button>
           </div>
         </div>
@@ -146,7 +151,7 @@
           <div
             class="title"
             data-scroll
-            data-scroll-speed="2"
+            data-scroll-speed="1"
             data-scroll-call="test"
           >
             <span>Explore The</span> App
@@ -154,7 +159,7 @@
           <p
             class="col-md-7 m-auto text-center mt-5"
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="1"
             data-scroll-call="test"
           >
             Our goal is to create an open, honest and decentralized platform
@@ -163,15 +168,19 @@
           </p>
 
           <div class="d-flex align-items-center exploreSlide-w">
-            <div class="exploreApp-Img">
-              <img loading="auto" src="images/explore-left-img.png" alt="" />
+            <div class="exploreApp-Img d-none d-lg-block">
+              <img
+                class="d-block img-fluid"
+                src="images/explore-left-img.png"
+                alt=""
+              />
             </div>
             <div class="exploreApp-img">
               <div class="exploreAppSlide">
                 <div>
                   <div class="exploreSlide-item">
                     <img
-                      loading="auto"
+                      class="d-block img-fluid"
                       src="images/explore-slide-1.png"
                       alt=""
                     />
@@ -179,35 +188,27 @@
                 </div>
                 <div>
                   <div class="exploreSlide-item">
-                    <img
-                      loading="auto"
-                      src="images/explore-slide-2.png"
-                      alt=""
-                    />
+                    <img src="images/explore-slide-2.png" alt="" />
                   </div>
                 </div>
                 <div>
                   <div class="exploreSlide-item">
-                    <img
-                      loading="auto"
-                      src="images/explore-slide-3.png"
-                      alt=""
-                    />
+                    <img src="images/explore-slide-3.png" alt="" />
                   </div>
                 </div>
                 <div>
                   <div class="exploreSlide-item">
-                    <img
-                      loading="auto"
-                      src="images/explore-slide-4.png"
-                      alt=""
-                    />
+                    <img src="images/explore-slide-4.png" alt="" />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="exploreApp-Img">
-              <img loading="auto" src="images/explore-righ-img.png" alt="" />
+            <div class="exploreApp-Img d-none d-lg-block">
+              <img
+                class="d-block img-fluid"
+                src="images/explore-righ-img.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -223,32 +224,34 @@
         <span
           class="bg-1"
           data-scroll
-          data-scroll-speed="12"
+          data-scroll-speed="3"
           data-scroll-call="test"
-          ><img loading="auto" src="images/slide-bg-1.png" alt=""
+          ><img src="images/slide-bg-1.png" alt=""
         /></span>
         <span
           class="bg-2"
           data-scroll
-          data-scroll-speed="12"
+          data-scroll-speed="3"
           data-scroll-call="test"
-          ><img loading="auto" src="images/coin-1.png" alt=""
+          ><img src="images/coin-1.png" alt=""
         /></span>
         <div class="container" id="speed-control">
           <div
             class="whBlank-box"
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="2"
             data-scroll-call="test"
           ></div>
           <h3
             class="text-center"
             data-scroll
-            data-scroll-speed="0"
+            data-scroll-speed="1"
             data-scroll-call="test"
           >
-            WhereAt users are rewarded for their contribution <br />
-            in the application and will be able earn <br />
+            WhereAt users are rewarded for their contribution
+            <br class="d-none d-lg-block" />
+            in the application and will be able earn
+            <br class="d-none d-lg-block" />
             $WAT tokens for every review.
           </h3>
         </div>
@@ -258,70 +261,124 @@
           data-scroll-speed="0"
           data-scroll-call="test"
         >
-          <div class="tokenSlide">
+          <div class="tokenslider">
             <div>
-              <div class="tokenSlide-box">
-                <a href="#">
-                  <img loading="auto" src="images/slide-3.jpg" alt="" />
-                  <figure>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
                     <h3>Article</h3>
-                    <p>Read More</p>
-                  </figure>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
                 </a>
               </div>
             </div>
             <div>
-              <div class="tokenSlide-box">
-                <a href="#">
-                  <img loading="auto" src="images/slide-3.jpg" alt="" />
-                  <figure>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
                     <h3>Article</h3>
-                    <p>Read More</p>
-                  </figure>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
                 </a>
               </div>
             </div>
             <div>
-              <div class="tokenSlide-box">
-                <a href="#">
-                  <img loading="auto" src="images/slide-3.jpg" alt="" />
-                  <figure>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
                     <h3>Article</h3>
-                    <p>Read More</p>
-                  </figure>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
                 </a>
               </div>
             </div>
             <div>
-              <div class="tokenSlide-box">
-                <a href="#">
-                  <img loading="auto" src="images/slide-3.jpg" alt="" />
-                  <figure>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
                     <h3>Article</h3>
-                    <p>Read More</p>
-                  </figure>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
                 </a>
               </div>
             </div>
             <div>
-              <div class="tokenSlide-box">
-                <a href="#">
-                  <img loading="auto" src="images/slide-3.jpg" alt="" />
-                  <figure>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
                     <h3>Article</h3>
-                    <p>Read More</p>
-                  </figure>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
                 </a>
               </div>
             </div>
             <div>
-              <div class="tokenSlide-box">
-                <a href="#">
-                  <img loading="auto" src="images/slide-3.jpg" alt="" />
-                  <figure>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
                     <h3>Article</h3>
-                    <p>Read More</p>
-                  </figure>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
+                    <h3>Article</h3>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="tokenslider-slide">
+                <a href="#" class="d-table position-relative">
+                  <img
+                    class="d-block mx-auto w-100"
+                    src="images/slide-3.jpg"
+                    alt=""
+                  />
+                  <figcaption>
+                    <h3>Article</h3>
+                    <p class="text-uppercase">Read More</p>
+                  </figcaption>
                 </a>
               </div>
             </div>
@@ -331,33 +388,29 @@
 
       <div class="wattFlex-main" data-scroll-section>
         <div class="watt-bg-1">
-          <img loading="auto" src="images/stats-bg.png" alt="" />
+          <img src="images/stats-bg.png" alt="" />
         </div>
         <div class="watt-bg-2">
-          <img loading="auto" src="images/watt-bg-2.png" alt="" />
+          <img src="images/watt-bg-2.png" alt="" />
         </div>
         <div class="container" id="speed-control">
           <div class="wattFlex">
             <div
               class="textCols"
               data-scroll
-              data-scroll-speed="5"
+              data-scroll-speed="3"
               data-scroll-call="test"
             >
               <div class="title">
                 <span>How To</span>
                 Start
-                <img
-                  loading="auto"
-                  src="images/how-to-start-title-bg.png"
-                  alt=""
-                />
+                <img src="images/how-to-start-title-bg.png" alt="" />
               </div>
             </div>
             <div
               class="appDesc"
               data-scroll
-              data-scroll-speed="5"
+              data-scroll-speed="2"
               data-scroll-call="test"
             >
               <img
@@ -372,28 +425,28 @@
               />
               <div class="d-flex-mobile">
                 <div class="app-desc-cols p-1">
-                  <img loading="auto" src="images/download-app.png" alt="" />
+                  <img src="images/download-app.png" alt="" />
                   <div class="sbtitle">
                     Download the <br />
                     App
                   </div>
                 </div>
                 <div class="app-desc-cols p-2">
-                  <img loading="auto" src="images/unique-nft.png" alt="" />
+                  <img src="images/unique-nft.png" alt="" />
                   <div class="sbtitle">
                     Buy a unique <br />
                     NFT
                   </div>
                 </div>
                 <div class="app-desc-cols p-3">
-                  <img loading="auto" src="images/money.png" alt="" />
+                  <img src="images/money.png" alt="" />
                   <div class="sbtitle">
                     Start earning by <br />
                     giving reviews
                   </div>
                 </div>
                 <div class="app-desc-cols p-4">
-                  <img loading="auto" src="images/influncer.png" alt="" />
+                  <img src="images/influncer.png" alt="" />
                   <div class="sbtitle">
                     Climb the leaderboards and <br />
                     become a WhereAt influencer
@@ -407,7 +460,7 @@
 
       <div class="socialTeam-main" data-scroll-section>
         <div class="social-bg">
-          <img loading="auto" src="images/social-team-bg.png" alt="" />
+          <img src="images/social-team-bg.png" alt="" />
         </div>
         <div class="container" id="speed-control">
           <div
@@ -425,63 +478,63 @@
             data-scroll-call="test"
           >
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-1.png" alt="" />
+              <img src="images/team-1.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Logino Dujardin</div>
                 <div class="sbtitle">Chief Brand Officer</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-2.png" alt="" />
+              <img src="images/team-2.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Brecht van Craen</div>
                 <div class="sbtitle">Chief Executive Officer</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-3.png" alt="" />
+              <img src="images/team-3.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Thomas Ambrosia</div>
                 <div class="sbtitle">Chief Operating Officer</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-4.png" alt="" />
+              <img src="images/team-4.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Quinten Francois</div>
                 <div class="sbtitle">Chief Marketing Officer</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-5.png" alt="" />
+              <img src="images/team-5.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Matthijs den Hartog</div>
                 <div class="sbtitle">Head of Communications</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-6.png" alt="" />
+              <img src="images/team-6.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Parveen Sharma</div>
                 <div class="sbtitle">Head of Design</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-7.png" alt="" />
+              <img src="images/team-7.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Larry Martocci</div>
                 <div class="sbtitle">Community Moderator</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-8.png" alt="" />
+              <img src="images/team-8.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Mehdi Zagheden</div>
                 <div class="sbtitle">Mehdi Zagheden</div>
               </div>
             </div>
             <div class="socialteam-cols">
-              <img loading="auto" src="images/team-9.png" alt="" />
+              <img src="images/team-9.png" alt="" />
               <div class="socialtema-details">
                 <div class="title">Yogesh Kumar</div>
                 <div class="sbtitle">Front End Developer</div>
@@ -489,21 +542,21 @@
             </div>
           </div>
           <div class="arrow-bg-1">
-            <img loading="auto" src="images/arrow-bg-2.png" alt="" />
+            <img src="images/arrow-bg-2.png" alt="" />
           </div>
         </div>
       </div>
 
       <div class="backersMain" data-scroll-section>
         <div class="backers-bg-2">
-          <img loading="auto" src="images/backers-bg-2.png" alt="" />
+          <img src="images/backers-bg-2.png" alt="" />
         </div>
         <div class="container" id="speed-control">
           <div class="backersFlex">
             <div
               class="backersTitle"
               data-scroll
-              data-scroll-speed="5"
+              data-scroll-speed="3"
               data-scroll-call="test"
             >
               <div class="title"><span>Our</span> Backers</div>
@@ -511,17 +564,17 @@
             <div
               class="backersBrand"
               data-scroll
-              data-scroll-speed="5"
+              data-scroll-speed="3"
               data-scroll-call="test"
             >
               <div class="backersBrand-cols">
-                <img loading="auto" src="images/brand-1.png" alt="" />
+                <img src="images/brand-1.png" alt="" />
               </div>
               <div class="backersBrand-cols">
-                <img loading="auto" src="images/brand-2.png" alt="" />
+                <img src="images/brand-2.png" alt="" />
               </div>
               <div class="backersBrand-cols">
-                <img loading="auto" src="images/brand-3.png" alt="" />
+                <img src="images/brand-3.png" alt="" />
               </div>
             </div>
           </div>
@@ -534,24 +587,24 @@
             <div
               class="d-flex justify-content-center"
               data-scroll
-              data-scroll-speed="5"
+              data-scroll-speed="3"
               data-scroll-call="test"
             >
               <h3 class="title">OUR ADVISORS</h3>
             </div>
             <div class="adviser-bg">
-              <img loading="auto" src="images/arrow-next-2.png" alt="" />
+              <img src="images/arrow-next-2.png" alt="" />
             </div>
             <div
               class="ourAdviser-slide"
               data-scroll
-              data-scroll-speed="5"
+              data-scroll-speed="2"
               data-scroll-call="test"
             >
               <div>
                 <div class="adviserCols">
                   <div class="adviserCols-box">
-                    <img loading="auto" src="images/adviser-1.png" alt="" />
+                    <img src="images/adviser-1.png" alt="" />
                   </div>
                   <div class="adviserCols-detail">
                     <div class="title">Bjorn Vuylsteker</div>
@@ -562,7 +615,7 @@
               <div>
                 <div class="adviserCols">
                   <div class="adviserCols-box">
-                    <img loading="auto" src="images/adviser-2.png" alt="" />
+                    <img src="images/adviser-2.png" alt="" />
                   </div>
                   <div class="adviserCols-detail">
                     <div class="title"></div>
@@ -573,7 +626,7 @@
               <div>
                 <div class="adviserCols">
                   <div class="adviserCols-box">
-                    <img loading="auto" src="images/adviser-5.png" alt="" />
+                    <img src="images/adviser-5.png" alt="" />
                   </div>
                   <div class="adviserCols-detail">
                     <div class="title">Ondrej Machacek</div>
@@ -584,7 +637,7 @@
               <div>
                 <div class="adviserCols">
                   <div class="adviserCols-box">
-                    <img loading="auto" src="images/adviser-4.png" alt="" />
+                    <img src="images/adviser-4.png" alt="" />
                   </div>
                   <div class="adviserCols-detail">
                     <div class="title"></div>
@@ -601,7 +654,7 @@
         <div
           class="bigTitle"
           data-scroll
-          data-scroll-speed="5"
+          data-scroll-speed="3"
           data-scroll-call="test"
         >
           Road <span>Map</span>
@@ -610,11 +663,11 @@
           <div
             class="roadMap-cols"
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="2"
             data-scroll-call="test"
           >
             <div class="roadMap-bgImg d-none d-xl-block">
-              <img loading="auto" src="images/road-map.png" alt="" />
+              <img src="images/road-map.png" alt="" />
             </div>
             <div class="roadMap-detail item-1">
               <div class="d-md-none align-items-start roadMap-main-circle">
@@ -796,8 +849,16 @@
           data-scroll-speed="5"
           data-scroll-call="test"
         >
-          <img loading="auto" src="images/arrow-prev.png" alt="" />
+          <img src="images/arrow-prev.png" alt="" />
         </div>
+      </div>
+
+      <div data-scroll-section>
+        <p class="note">
+          *NOTE: The roadmap are axpectations lined out for the community and
+          are not hard dates. The completion of the roadmap if fully dependent
+          on the fundraising and market sentiment.
+        </p>
       </div>
 
       <div class="suscribeMain" data-scroll-section>
@@ -805,7 +866,7 @@
           <div
             class="subscribe-flex"
             data-scroll
-            data-scroll-speed="5"
+            data-scroll-speed="3"
             data-scroll-call="test"
           >
             <input type="text" placeholder="EMAIL" name="" id="" />
@@ -817,14 +878,10 @@
       <footer data-scroll-section>
         <div class="container">
           <div class="footSocial">
-            <img loading="auto" src="images/mobile-cover.png" alt="" />
+            <img src="images/mobile-cover.png" alt="" class="d-block mx-auto" />
             <div class="socialLink">
-              <a href="#"
-                ><img loading="auto" src="images/twitter.png" alt=""
-              /></a>
-              <a href="#"
-                ><img loading="auto" src="images/telegram.png" alt=""
-              /></a>
+              <a href="#"><img src="images/twitter.png" alt="" /></a>
+              <a href="#"><img src="images/telegram.png" alt="" /></a>
             </div>
           </div>
 
@@ -835,17 +892,15 @@
             <a href="#">Documentation</a>
           </div>
           <div class="foot-copyright">
-            We <img loading="auto" src="images/heart.png" alt="" /> Binance
-            Smart Chain. Built on BNB Chain. Copyright © 2022 WhereAt - All
-            Rights Reserved
+            We <img src="images/heart.png" alt="" /> Binance Smart Chain. Built
+            on BNB Chain. Copyright © 2022 WhereAt - All Rights Reserved
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/slick.js"></script>
-    <!-- <script src="js/mainparallax.js"></script> -->
     <script src="js/main.bundle.js"></script>
   </body>
 </html>

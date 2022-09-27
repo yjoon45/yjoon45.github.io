@@ -1,30 +1,24 @@
 import LocomotiveScroll from 'locomotive-scroll';
 
 $(function () {
-  $('.tokenSlide').slick({
+  $('.tokenslider').slick({
     centerMode: true,
-    centerPadding: '200px',
-    slidesToShow: 3,
+    slidesToShow: 5,
+    autoplay: true,
+    arrows: false,
     responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 3,
-          centerPadding: '20px',
-          slidesToScroll: 1,
-          centerMode: true,
-          infinite: true,
-          dots: false,
-        },
-      },
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: '20px',
-          centerMode: true,
-          dots: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -75,6 +69,7 @@ $(function () {
     speed: 300,
     slidesToShow: 1,
     fade: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 767,
