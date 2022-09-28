@@ -1161,8 +1161,8 @@ body {
       width: 50%;
 
       @media (max-width: 767px) {
-        width: 80%;
-        margin-top: 100px;
+        width: 100%;
+        margin-top: 0;
       }
 
       .d-flex-mobile {
@@ -1173,10 +1173,10 @@ body {
           max-width: 220px;
           flex-wrap: wrap;
           margin: auto;
-          position: absolute;
-          top: -130px;
-          left: 50%;
-          transform: translate(-50%);
+          // position: absolute;
+          // top: -130px;
+          // left: 50%;
+          // transform: translate(-50%);
         }
       }
 
@@ -1196,6 +1196,9 @@ body {
 
         @media (max-width: 767px) {
           display: block;
+          position: absolute;
+          top: calc(50% - 15px);
+          transform: translateY(-50%);
         }
       }
 
@@ -1383,7 +1386,7 @@ body {
 
     @media (max-width: 767px) {
       padding-top: 120px;
-      margin: 100px 0 0;
+      margin: 0;
     }
   }
 
@@ -1893,14 +1896,20 @@ body {
 
   .roadMap-arrow-icon {
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     left: 60%;
     transform: translate(-60%);
     z-index: 1;
   }
 
   .roadMap-main-circle {
-    min-width: 80px;
+    @media (max-width: 1199px) {
+      min-width: 150px;
+    }
+
+    @media (max-width: 767px) {
+      min-width: 120px;
+    }
   }
 
   .roadMap-cols {
@@ -2512,4 +2521,11 @@ footer {
 
 .translate-y {
   transform: translateY(var(--y));
+}
+
+.roadMap-cols {
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
