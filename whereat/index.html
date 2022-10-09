@@ -77,9 +77,6 @@
         >
           <img src="images/banner-bg-1.png" alt="" />
         </div>
-        <div class="banner-bg-2" data-scroll data-scroll-speed="1">
-          <img src="images/banner-bg-2.png" alt="" />
-        </div>
         <div
           class="banner-bg-3"
           data-scroll
@@ -105,52 +102,41 @@
       </section>
 
       <section class="rateEarn-main" data-scroll-section>
-        <div class="container" id="speed-control">
+        <div
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-call="test"
+          class="container"
+          id="speed-control"
+        >
           <span class="bg-1"></span>
-          <div
-            class="title text-center"
-            data-scroll
-            data-scroll-speed="1"
-            data-scroll-call="test"
-          >
+          <div class="title text-center">
             Rate-to-Earn
+            <div class="rateEarn-sbtitle col-lg-6 m-auto mb-lg-5 mb-4">
+              #Web3 #SocialFi Networking Application on BNBChain
+            </div>
           </div>
 
           <div class="rateEarn-flex">
-            <div
-              class="rateEarn-sbtitle"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-call="test"
-            >
-              #Web3 <br />
-              #SocialFi <br />
-              Networking <br />
-              Application <br />
-              on <br />
-              BNBChain
-            </div>
-            <div class="rateEarn-img" data-scroll data-scroll-offset="200">
-              <img src="images/rate-img.png" alt="" />
-            </div>
-            <div
-              class="rateEarn-text"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-call="test"
-            >
-              <li>
-                <img src="images/one.png" alt="" /> First Rate-to-Earn concept
-                on the market
-              </li>
-              <li>
-                <img src="images/two.png" alt="" /> GameFi Elements and in-game
-                digital assets
-              </li>
-              <li>
-                <img src="images/three.png" alt="" /> NFT marketplace and Global
-                and local leaderboards
-              </li>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="rateEarn-box">
+                  <div class="boxTitle">1</div>
+                  <p>First Rate-to-Earn concept on the market</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rateEarn-box">
+                  <div class="boxTitle">2</div>
+                  <p>GameFi Elements and in-game digital assets</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rateEarn-box">
+                  <div class="boxTitle">3</div>
+                  <p>NFT marketplace and Global and local leaderboards</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="rateEart-sendEmail">
@@ -164,6 +150,13 @@
       </section>
 
       <div class="exploreThe-appmain" data-scroll-section>
+        <span
+          class="bg-2"
+          data-scroll
+          data-scroll-speed="3"
+          data-scroll-call="test"
+          ><img src="images/coin-1.png" alt=""
+        /></span>
         <div class="container" id="speed-control">
           <div
             class="title"
@@ -174,7 +167,7 @@
             <span>Explore The</span> App
           </div>
           <p
-            class="col-md-7 m-auto text-center mt-5"
+            class="col-md-7 m-auto text-center mt-4"
             data-scroll
             data-scroll-speed="1"
             data-scroll-call="test"
@@ -190,6 +183,9 @@
                 class="d-block img-fluid"
                 src="images/explore-left-img.png"
                 alt=""
+                data-scroll
+                data-scroll-speed="0.5"
+                data-scroll-call="test"
               />
             </div>
             <div class="exploreApp-img">
@@ -225,191 +221,120 @@
                 class="d-block img-fluid"
                 src="images/explore-righ-img.png"
                 alt=""
+                data-scroll
+                data-scroll-speed="-0.5"
+                data-scroll-call="test"
               />
             </div>
           </div>
         </div>
-        <div
-          class="explore-bg-box"
-          data-scroll
-          data-scroll-speed="2"
-          data-scroll-call="test"
-        ></div>
       </div>
 
       <!-- <div class="whSlide-main" data-scroll-section>
-        <span
-          class="bg-1"
-          data-scroll
-          data-scroll-speed="3"
-          data-scroll-call="test"
-          ><img src="images/slide-bg-1.png" alt=""
-        /></span>
-        <span
-          class="bg-2"
-          data-scroll
-          data-scroll-speed="3"
-          data-scroll-call="test"
-          ><img src="images/coin-1.png" alt=""
-        /></span>
-        <div class="container" id="speed-control">
-          <div
-            class="whBlank-box"
-            data-scroll
-            data-scroll-speed="2"
-            data-scroll-call="test"
-          ></div>
-          <h3
-            class="text-center"
-            data-scroll
-            data-scroll-speed="1"
-            data-scroll-call="test"
-          >
-            WhereAt users are rewarded for their contribution
-            <br class="d-none d-lg-block" />
-            in the application and will be able earn
-            <br class="d-none d-lg-block" />
-            $WAT tokens for every review.
-          </h3>
-        </div>
-        <div
-          class="tokenSlide-main"
-          data-scroll
-          data-scroll-speed="0"
-          data-scroll-call="test"
-        >
-          <div class="tokenslider">
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+      <div class="container" id="speed-control">
+        <h3 class="text-center" data-scroll data-scroll-speed="1" data-scroll-call="test">
+          WhereAt users are rewarded for their contribution
+          <br class="d-none d-lg-block" />
+          in the application and will be able earn
+          <br class="d-none d-lg-block" />
+          $WAT tokens for every review.
+        </h3>
+      </div>
+      <div class="tokenSlide-main" data-scroll data-scroll-speed="0" data-scroll-call="test">
+        <div class="tokenslider">
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+          </div>
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+          </div>
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+          </div>
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+          </div>
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+          </div>
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+          </div>
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
-            <div>
-              <div class="tokenslider-slide">
-                <a href="#" class="d-table position-relative">
-                  <img
-                    class="d-block mx-auto w-100"
-                    src="images/slide-3.jpg"
-                    alt=""
-                  />
-                  <figcaption>
-                    <h3>Article</h3>
-                    <p class="text-uppercase">Read More</p>
-                  </figcaption>
-                </a>
-              </div>
+          </div>
+          <div>
+            <div class="tokenslider-slide">
+              <a href="#" class="d-table position-relative">
+                <img class="d-block mx-auto w-100" src="images/slide-3.jpg" alt="" />
+                <figcaption>
+                  <h3>Article</h3>
+                  <p class="text-uppercase">Read More</p>
+                </figcaption>
+              </a>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
+    </div> -->
 
       <div class="wattFlex-main" data-scroll-section>
-        <div class="watt-bg-1">
-          <img src="images/stats-bg.png" alt="" />
-        </div>
-        <div class="watt-bg-2">
-          <img src="images/watt-bg-2.png" alt="" />
-        </div>
         <div class="container" id="speed-control">
           <div class="wattFlex">
             <div
@@ -476,9 +401,6 @@
       </div>
 
       <div class="socialTeam-main" data-scroll-section>
-        <div class="social-bg">
-          <img src="images/social-team-bg.png" alt="" />
-        </div>
         <div class="container" id="speed-control">
           <div
             class="d-flex justify-content-center"
@@ -486,7 +408,7 @@
             data-scroll-speed="1"
             data-scroll-call="test"
           >
-            <h1 class="text-center">WHEREAT SOCIAL TEAM</h1>
+            <h1 class="text-center"><span>WHEREAT</span> SOCIAL TEAM</h1>
           </div>
           <div
             class="socialteams"
@@ -580,9 +502,6 @@
       </div>
 
       <div class="backersMain" data-scroll-section>
-        <div class="backers-bg-2">
-          <img src="images/backers-bg-2.png" alt="" />
-        </div>
         <div class="container" id="speed-control">
           <div class="backersFlex">
             <div
@@ -593,19 +512,29 @@
             >
               <div class="title"><span>Our</span> Backers</div>
             </div>
-            <div
-              class="backersBrand"
-              data-scroll
-              data-scroll-speed="3"
-              data-scroll-call="test"
-            >
-              <div class="backersBrand-cols">
+            <div class="backersBrand">
+              <div
+                class="backersBrand-cols"
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-call="test"
+              >
                 <img src="images/brand-1.png" alt="" />
               </div>
-              <div class="backersBrand-cols">
+              <div
+                class="backersBrand-cols"
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-call="test"
+              >
                 <img src="images/brand-2.png" alt="" />
               </div>
-              <div class="backersBrand-cols">
+              <div
+                class="backersBrand-cols"
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-call="test"
+              >
                 <img src="images/brand-3.png" alt="" />
               </div>
             </div>
@@ -623,9 +552,6 @@
               data-scroll-call="test"
             >
               <h3 class="title">OUR ADVISORS</h3>
-            </div>
-            <div class="adviser-bg">
-              <img src="images/arrow-next-2.png" alt="" />
             </div>
             <div
               class="ourAdviser-slide"
@@ -710,7 +636,9 @@
               <div
                 class="d-flex d-xl-block align-items-start roadMap-main-circle"
               >
-                <div class="circle-cols" style="background: #69cce2"></div>
+                <div class="circle-cols">
+                  <img src="images/sky-pin.png" alt="" />
+                </div>
                 <div class="title">Q1 2022</div>
               </div>
               <div class="text-left">
@@ -736,7 +664,9 @@
               <div
                 class="d-flex d-xl-block align-items-start roadMap-main-circle"
               >
-                <div class="circle-cols" style="background: #d4703e"></div>
+                <div class="circle-cols">
+                  <img src="images/orange-pin.png" alt="" />
+                </div>
                 <div class="title">Q2 2022</div>
               </div>
               <div class="text-left">
@@ -758,10 +688,9 @@
               <div
                 class="d-flex d-lg-none align-items-start roadMap-main-circle"
               >
-                <div
-                  class="circle-cols order-first"
-                  style="background: #f7e952"
-                ></div>
+                <div class="circle-cols">
+                  <img src="images/blue-pin.png" alt="" />
+                </div>
                 <div class="title">Q3 2022</div>
               </div>
               <div class="text-left">
@@ -796,20 +725,18 @@
                 class="d-none d-xxl-block align-items-start roadMap-main-circle"
               >
                 <div class="title">Q3 2022</div>
-                <div
-                  class="circle-cols order-first"
-                  style="background: #f7e952"
-                ></div>
+                <div class="circle-cols">
+                  <img src="images/blue-pin.png" alt="" />
+                </div>
               </div>
             </div>
             <div class="roadMap-detail item-4">
               <div
                 class="d-flex d-xl-block align-items-start roadMap-main-circle"
               >
-                <div
-                  class="circle-cols"
-                  style="background: #0a0a0a; border: 2px solid #c337ee"
-                ></div>
+                <div class="circle-cols">
+                  <img src="images/purple-pin.png" alt="" />
+                </div>
                 <div class="title">Q4 2022</div>
               </div>
               <div>
@@ -850,10 +777,9 @@
               <div
                 class="d-flex d-xl-block align-items-start roadMap-main-circle"
               >
-                <div
-                  class="circle-cols"
-                  style="background: #0a0a0a; border: 2px solid #84fba7"
-                ></div>
+                <div class="circle-cols">
+                  <img src="images/green-pin.png" alt="" />
+                </div>
                 <div class="title">Q1 2023</div>
               </div>
               <div class="text-left">
@@ -881,19 +807,12 @@
             </div>
           </div>
         </div>
-
-        <div
-          class="roadMap-arrow-icon"
+        <p
+          class="note"
           data-scroll
-          data-scroll-speed="3"
+          data-scroll-speed="2"
           data-scroll-call="test"
         >
-          <img src="images/arrow-prev.png" alt="" />
-        </div>
-      </div>
-
-      <div data-scroll-section>
-        <p class="note">
           *NOTE: The roadmap are axpectations lined out for the community and
           are not hard dates. The completion of the roadmap if fully dependent
           on the fundraising and market sentiment.
@@ -902,15 +821,10 @@
 
       <div class="suscribeMain" data-scroll-section>
         <div class="container" id="speed-control">
-          <div
-            class="subscribe-flex"
-            data-scroll
-            data-scroll-speed="3"
-            data-scroll-call="test"
-          >
+          <form class="subscribe-flex" data-scroll data-scroll-speed="1">
             <input type="text" placeholder="EMAIL" name="" id="" />
             <button>Subscribe</button>
-          </div>
+          </form>
         </div>
       </div>
 

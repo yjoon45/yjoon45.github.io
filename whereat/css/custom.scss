@@ -12,18 +12,22 @@
 html,
 body {
   font-family: 'Poppins', sans-serif !important;
-  background-color: #0a0a0a;
+  background-color: #211139;
   color: #fff !important;
 }
 
 .banner {
   height: 100vh;
   position: relative;
-  background-color: #0a0a0a;
+  background-color: #211139;
   overflow: hidden;
 
   @media (min-width: 768px) and (max-width: 1199px) {
     height: 75vh;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 780px;
   }
 
   @media (max-width: 766px) {
@@ -51,7 +55,8 @@ body {
           width: 100%;
           height: 3px;
           background: #fff;
-          margin: 7px 0;
+          margin: 3px 0;
+          float: right;
 
           &:first-child {
             width: 38px;
@@ -92,7 +97,7 @@ body {
     display: flex;
     justify-content: flex-end;
     right: 40px;
-    top: 60px;
+    top: 40px;
 
     @media (min-width: 1200px) {
       right: 80px;
@@ -128,12 +133,11 @@ body {
       right: inherit;
       height: 100vh;
       display: block;
-      background: #000;
+      background: #2f2447;
     }
 
     ul {
       display: inline-flex;
-      background: #000;
       padding: 7px 0;
 
       @media (max-width: 767px) {
@@ -157,7 +161,8 @@ body {
           }
 
           &:hover {
-            color: #fe7593;
+            color: #6d1eed;
+            transition: all 0.5s;
           }
         }
 
@@ -178,28 +183,29 @@ body {
 
   .cludBg {
     position: absolute;
-    left: 50px;
-    top: 80px;
+    left: 50%;
+    top: 50px;
     z-index: 99;
+    transform: translate(-50%);
 
     @media (max-width: 767px) {
-      left: 20px;
-      top: 20px;
+      left: 50%;
+      top: 40px;
     }
 
     img {
       width: 100%;
-      max-width: 100px;
+      max-width: 120px;
 
       @media (max-width: 767px) {
-        max-width: 50px;
+        max-width: 70px;
       }
     }
   }
 
   .banner-bg-1 {
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
     z-index: 999;
     width: 100%;
 
@@ -328,7 +334,22 @@ body {
 .rateEarn-main {
   padding: 80px 0;
   position: relative;
-  background-color: #0a0a0a;
+  background-color: #211139;
+
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+
+  &::before {
+    content: '';
+    background: url('../images/rateearn-background.png') no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   @media (max-width: 767px) {
     padding: 27px 0;
@@ -336,112 +357,6 @@ body {
 
   .container {
     position: relative;
-  }
-
-  .bg-1 {
-    content: '';
-    width: 100%;
-    max-width: 125px;
-    height: 300px;
-    background: rgba(21, 21, 21, 0.82);
-    position: absolute;
-    top: -80px;
-    left: 11.5%;
-
-    @media (max-width: 1199px) {
-      max-width: 95px;
-      height: 160px;
-
-      @media (max-width: 991px) {
-        max-width: 75px;
-        height: 100px;
-
-        @media (max-width: 767px) {
-          max-width: 70px;
-          height: 80px;
-        }
-      }
-    }
-  }
-
-  .bg-2 {
-    content: '';
-    width: 100%;
-    max-width: 110px;
-    height: 330px;
-    background: rgba(21, 21, 21, 0.82);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-
-  .bg-3 {
-    content: '';
-    width: 100%;
-    max-width: 415px;
-    height: 325px;
-    background: rgba(21, 21, 21, 0.82);
-    position: absolute;
-    bottom: -35.8%;
-    left: 14.5%;
-
-    @media (max-width: 1199px) {
-      bottom: -32%;
-      left: 7.5%;
-      max-width: 340px;
-      height: 215px;
-
-      @media (max-width: 991px) {
-        bottom: -25%;
-        left: 7.5%;
-        max-width: 260px;
-        height: 185px;
-
-        @media (max-width: 767px) {
-          bottom: -22px;
-          left: 8.5%;
-          max-width: 130px;
-          height: 37px;
-        }
-      }
-    }
-  }
-
-  &::before {
-    content: '';
-    background: url('../images/rateearn-bg.png') no-repeat;
-    width: 100%;
-    height: 212px;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    @media (max-width: 767px) {
-      top: 0;
-    }
-  }
-
-  &::after {
-    content: '';
-    background: url('../images/rateearn-bg-2.png') no-repeat;
-    width: 100%;
-    height: 212px;
-    background-size: contain;
-    background-position: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-
-    @media (max-width: 767px) {
-      top: 0;
-    }
   }
 
   .container {
@@ -455,15 +370,38 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 
+    .rateEarn-sbtitle {
+      font-size: 30px;
+      text-transform: capitalize;
+      line-height: 2.5rem;
+      margin-top: 15px !important;
+
+      @media (max-width: 991px) {
+        margin-top: 0 !important;
+        margin-bottom: 15px !important;
+        font-size: 24px;
+
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: 1.7rem;
+        }
+      }
+    }
+
     @media (max-width: 991px) {
       font-size: 42px;
+
+      @media (max-width: 767px) {
+        font-size: 36px;
+        font-weight: 700;
+      }
     }
   }
 
   .rateEarn-flex {
     width: 100%;
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 10px auto;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
@@ -472,6 +410,37 @@ body {
     @media (max-width: 767px) {
       flex-wrap: wrap;
       margin: 0;
+    }
+
+    .rateEarn-box {
+      border: 2px solid #fff;
+      border-radius: 10px;
+      margin: 0 15px;
+      text-align: center;
+      padding: 5px 40px;
+
+      @media (max-width: 991px) {
+        margin: 0;
+        padding: 10px;
+
+        @media (max-width: 767px) {
+          margin-bottom: 25px;
+        }
+      }
+
+      .boxTitle {
+        font-size: 67px;
+        font-family: 'Anton', sans-serif !important;
+        color: #211139;
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+          1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5rem;
+      }
     }
 
     .rateEarn-sbtitle {
@@ -565,23 +534,16 @@ body {
   }
 
   .rateEart-sendEmail {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #010101;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 30px 15px;
     width: 100%;
     max-width: 980px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
     z-index: 99;
+    text-align: center;
 
     @media (max-width: 767px) {
-      flex-wrap: wrap;
-      justify-content: center;
+      margin-top: 10px;
     }
 
     h3 {
@@ -591,22 +553,24 @@ body {
       @media (max-width: 767px) {
         font-size: 22px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
 
     button {
       display: inline-block;
-      background: #c324f3;
+      background: #60d2d9;
       border: none;
       outline: none;
       padding: 8px 30px;
       border-radius: 8px;
-      color: #fff;
+      color: #000;
       text-align: center;
       font-size: 22px;
       font-weight: 600;
       transition: all 0.5s;
+      border: 2px solid #fff;
+      margin-top: 10px;
 
       @media (max-width: 767px) {
         font-size: 16px;
@@ -620,7 +584,8 @@ body {
       }
 
       &:hover {
-        background: #171717;
+        background: #fff;
+        color: #000;
         transition: all 0.5s;
       }
     }
@@ -631,7 +596,7 @@ body {
   padding: 0 0 50px;
   position: relative;
   z-index: 9;
-  background-color: #0a0a0a;
+  background-color: #211139;
 
   .container {
     position: relative;
@@ -650,51 +615,6 @@ body {
 
     @media (max-width: 767px) {
       display: none;
-    }
-  }
-
-  &::before {
-    content: '';
-    background: url('../images/where-at-bg.png') no-repeat;
-    width: 100%;
-    min-height: 176px;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    z-index: 1;
-    background-position: 50% 100%;
-    z-index: 9;
-
-    @media (max-width: 991px) {
-      background-position: 100% 80%;
-
-      @media (max-width: 767px) {
-        top: -115px;
-      }
-    }
-  }
-
-  &::after {
-    content: '';
-    background: url('../images/bg-2.png') no-repeat;
-    width: 100%;
-    min-height: 304px;
-    background-size: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    background-position: 100%;
-
-    @media (max-width: 991px) {
-      background-position: 100% 80%;
-
-      @media (max-width: 767px) {
-        display: none;
-      }
     }
   }
 
@@ -772,7 +692,7 @@ body {
   }
 
   .tokenSlide-main {
-    padding: 70px 0 150px;
+    padding: 20px 0;
     width: 100%;
     max-width: 100%;
     margin: auto;
@@ -986,44 +906,7 @@ body {
     padding: 70px 0 0;
 
     @media (max-width: 767px) {
-      padding: 40px 0 0;
-    }
-  }
-
-  &::before {
-    content: '';
-    background: url('../images/how-to-start-bg-2.png') no-repeat;
-    width: 100%;
-    height: 150px;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-
-    @media (max-width: 767px) {
-      display: block;
-    }
-  }
-
-  &::after {
-    content: '';
-    width: 100%;
-    max-width: 450px;
-    height: 242px;
-    background: #141414;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    @media (max-width: 991px) {
-      max-width: 210px;
-      height: 242px;
-
-      @media (max-width: 767px) {
-        max-width: 140px;
-        height: 60px;
-      }
+      padding: 0;
     }
   }
 
@@ -1128,7 +1011,7 @@ body {
           @media (max-width: 991px) {
             bottom: -40px;
             left: 50px;
-            max-width: 80px;
+            max-width: 200px;
 
             @media (max-width: 767px) {
               bottom: -23px;
@@ -1206,6 +1089,11 @@ body {
         display: inline-block;
         text-align: center;
 
+        img {
+          width: 100%;
+          max-width: 68%;
+        }
+
         @media (max-width: 767px) {
           position: relative !important;
           margin-bottom: 15px;
@@ -1269,7 +1157,7 @@ body {
 
       .app-desc-cols.p-4 {
         position: absolute;
-        right: -100px;
+        right: -130px;
         bottom: -70px;
 
         @media (max-width: 991px) {
@@ -1377,32 +1265,26 @@ body {
 }
 
 .socialTeam-main {
-  padding: 50px 0;
-  padding-top: 280px;
+  padding: 150px 0;
   position: relative;
 
   @media (max-width: 991px) {
-    padding-top: 150px;
-
-    @media (max-width: 767px) {
-      padding-top: 120px;
-      margin: 0;
-    }
+    padding: 100px 0;
   }
 
-  &::after {
+  @media (max-width: 767px) {
+    padding: 10px 0;
+  }
+
+  &::before {
     content: '';
-    background: url('../images/team-bg.png') no-repeat;
+    background: url('../images/social-team-background.png') no-repeat;
     width: 100%;
-    height: 300px;
-    background-size: contain;
+    height: 100%;
+    background-size: cover;
     position: absolute;
-    bottom: 28%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    z-index: 1;
-    background-position: 50%;
+    top: 0;
+    left: 0;
   }
 
   .container {
@@ -1411,11 +1293,22 @@ body {
   }
 
   h1 {
-    font-weight: 600;
-    font-size: 36px !important;
+    font-weight: 700;
+    font-size: 66px !important;
     display: inline-block;
-    background: #0a0a0a;
     padding: 8px 20px;
+    line-height: 3rem;
+
+    @media (max-width: 991px) {
+      font-size: 48px !important;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      font-size: 36px;
+      font-weight: 600;
+    }
 
     @media (max-width: 767px) {
       font-size: 24px !important;
@@ -1465,6 +1358,9 @@ body {
     flex-wrap: wrap;
     margin-top: 50px;
     position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
 
     @media (max-width: 991px) {
       justify-content: center;
@@ -1518,8 +1414,13 @@ body {
 }
 
 .backersMain {
-  padding: 100px 0;
+  padding: 300px 0;
   position: relative;
+
+  @media (max-width: 991px) {
+    padding: 50px 0;
+    padding-bottom: 340px;
+  }
 
   .backers-bg-2 {
     position: absolute;
@@ -1545,37 +1446,41 @@ body {
 
   @media (max-width: 767px) {
     padding: 0;
+    padding-bottom: 70px;
+    padding-top: 50px;
   }
 
   &::before {
     content: '';
     background: url('../images/backers-bg.png') no-repeat;
     width: 100%;
-    height: 100%;
-    background-size: cover;
+    height: 165px;
+    background-size: contain;
+    background-position: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 32%;
+    right: 0;
     z-index: 1;
 
     @media (max-width: 767px) {
-      background-position: 100% 100%;
+      top: 5%;
     }
   }
 
   &::after {
     content: '';
     width: 100%;
-    max-width: 310px;
-    height: 100%;
-    background: rgba(20, 20, 20, 0.9);
+    height: 400px;
+    background: url('../images//backers-background.png') no-repeat;
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    z-index: 1;
+    background-size: contain;
+    background-position: 100%;
 
     @media (max-width: 767px) {
-      max-width: 30px;
+      height: 100%;
+      background-position: 100% 100%;
     }
   }
 
@@ -1588,8 +1493,9 @@ body {
     display: flex;
     align-items: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .backersTitle {
@@ -1599,42 +1505,32 @@ body {
         width: 100%;
       }
 
-      &::before {
-        content: '';
-        background: rgba(20, 20, 20, 0.9);
-        width: 100%;
-        max-width: 265px;
-        height: 325px;
-        position: absolute;
-        top: 63px;
-        left: 50%;
-        transform: translate(-50%);
-
-        @media (max-width: 767px) {
-          display: none;
-        }
-      }
-
       .title {
-        font-size: 85px;
+        font-size: 148px;
         font-weight: 600;
         text-transform: uppercase;
-        line-height: 5.2rem;
+        line-height: 9rem;
         transform: rotate(-90deg);
 
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           transform: rotate(0);
-          font-size: 32px;
+          font-size: 62px;
           text-align: center;
           line-height: 2.3rem;
+          margin-bottom: 12px;
+
+          @media (max-width: 767px) {
+            font-size: 36px;
+            margin-bottom: 0;
+          }
         }
 
         span {
           display: block;
           width: 100%;
 
-          @media (max-width: 767px) {
-            display: initial;
+          @media (max-width: 991px) {
+            display: inline;
           }
         }
       }
@@ -1645,10 +1541,10 @@ body {
     display: flex;
     width: 100%;
     position: relative;
-    right: 92px;
+    right: 170px;
     top: 70px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       right: 0;
       top: 0;
       margin: 20px 0;
@@ -1658,9 +1554,9 @@ body {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      background: #000;
+      background: #fff;
       width: 100%;
-      min-height: 150px;
+      min-height: 130px;
       margin: 0 10px;
 
       @media (max-width: 991px) {
@@ -1702,7 +1598,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-size: 100%;
+    background-size: cover;
   }
 
   .container {
@@ -1713,8 +1609,6 @@ body {
       padding: 100px 0;
 
       @media (max-width: 991px) {
-        padding-bottom: 50px;
-
         @media (max-width: 767px) {
           padding: 30px 0;
         }
@@ -1795,6 +1689,7 @@ body {
 
       @media (max-width: 991px) {
         max-width: 650px;
+        padding: 0 40px;
 
         @media (max-width: 767px) {
           padding: 0 60px;
@@ -1810,9 +1705,13 @@ body {
           display: flex;
           justify-content: center;
 
+          img {
+            width: 100%;
+          }
+
           @media (max-width: 991px) {
             max-width: 100%;
-            height: 185px;
+            height: auto;
           }
         }
 
@@ -1837,6 +1736,11 @@ body {
         @media (max-width: 1199px) {
           right: -20px;
 
+          @media (max-width: 991px) {
+            right: 0;
+            top: 50%;
+          }
+
           @media (max-width: 767px) {
             right: 35px;
             width: 35px;
@@ -1851,6 +1755,10 @@ body {
 
           @media (max-width: 1199px) {
             background-size: 45px;
+
+            @media (max-width: 991px) {
+              padding: 7px 24px;
+            }
           }
         }
       }
@@ -1861,6 +1769,11 @@ body {
 
         @media (max-width: 1199px) {
           left: -40px;
+
+          @media (max-width: 991px) {
+            left: -30px;
+            top: 50%;
+          }
 
           @media (max-width: 767px) {
             left: 10px;
@@ -1875,6 +1788,10 @@ body {
 
           @media (max-width: 1199px) {
             background-size: 45px;
+
+            @media (max-width: 991px) {
+              padding: 7px 24px;
+            }
           }
         }
       }
@@ -1883,15 +1800,15 @@ body {
 }
 
 .roadMap-main {
-  padding: 0 0 30px;
-  background: url('../images/roadmap-bg.png') no-repeat top center;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  padding: 50px 0 100px;
   position: relative;
 
   @media (min-width: 1200px) {
     padding: 100px 0 150px;
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 40px;
   }
 
   .roadMap-arrow-icon {
@@ -1917,9 +1834,29 @@ body {
     max-width: 765px;
     margin: auto;
     position: relative;
+    margin-bottom: 140px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 50px;
+    }
+
+    &::before {
+      @media (max-width: 991px) {
+        content: '';
+        width: 27px;
+        height: 83%;
+        background: url('../images/mobile-roadmap.png') no-repeat;
+        position: absolute;
+        left: -1px;
+        top: 5px;
+        z-index: 9;
+        background-size: 100% 100%;
+      }
+    }
 
     .roadMap-detail {
       font-size: 13px;
+      z-index: 99;
 
       @media (min-width: 1200px) {
         position: absolute;
@@ -1953,6 +1890,10 @@ body {
 
         @media (max-width: 1199px) {
           font-size: 16px;
+
+          @media (max-width: 991px) {
+            margin: 0 5px;
+          }
         }
       }
 
@@ -1962,18 +1903,27 @@ body {
         height: 40px;
         border-radius: 50%;
         flex-shrink: 0;
+        margin: 8px 0;
+
+        img {
+          @media (max-width: 991px) {
+            width: 25px;
+          }
+        }
 
         @media (max-width: 1199px) {
           margin-right: 10px;
           width: 20px;
           height: 20px;
+          margin: 0;
+          margin-right: 10px;
         }
       }
     }
 
     .roadMap-detail.item-1 {
-      top: -138px;
-      left: 70%;
+      top: -120px;
+      left: 65%;
 
       @media (max-width: 1199px) {
         & > div {
@@ -1983,27 +1933,29 @@ body {
     }
 
     .roadMap-detail.item-2 {
-      left: 110%;
-      top: -8px;
+      left: 100%;
+      top: 19px;
       text-align: left;
     }
 
     .roadMap-detail.item-3 {
       bottom: -107px;
-      left: 81%;
+      left: 73.7%;
     }
 
     .roadMap-detail.item-4 {
-      left: 0%;
+      left: -4%;
       bottom: -165px;
+
       @media (min-width: 1200px) {
         text-align: right;
       }
     }
 
     .roadMap-detail.item-5 {
-      left: -18%;
-      top: 160px;
+      left: -19%;
+      top: 174px;
+
       @media (min-width: 1200px) {
         text-align: right;
       }
@@ -2031,7 +1983,7 @@ body {
     }
 
     @media (max-width: 991px) {
-      font-size: 32px;
+      font-size: 66px;
       margin-bottom: 20px;
     }
 
@@ -2053,7 +2005,7 @@ body {
 
     @media (max-width: 767px) {
       padding: 30px 15px;
-      margin: 80px 0;
+      margin: 0;
     }
   }
 
@@ -2061,13 +2013,18 @@ body {
     content: '';
     background: url('../images/subscribe-bg.png') no-repeat;
     width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
+    height: 290px;
+    background-size: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
     background-position: 50% 100%;
+
+    @media (max-width: 767px) {
+      background-size: 100% 70%;
+      background-position: 100%;
+      height: 200px;
+    }
   }
 
   .subscribe-flex {
@@ -2083,10 +2040,10 @@ body {
     input {
       width: 100%;
       max-width: 500px;
-      background: #000;
-      border: 2px solid #fff;
+      background: #fff;
+      border: 2px solid #000;
       text-align: center;
-      color: #fff;
+      color: #000;
       height: 55px;
       border-radius: 5px;
       outline: none;
@@ -2098,37 +2055,37 @@ body {
 
     input::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
-      color: #fff;
+      color: #000;
     }
 
     input::-moz-placeholder {
       /* Firefox 19+ */
-      color: #fff;
+      color: #000;
     }
 
     input:-ms-input-placeholder {
       /* IE 10+ */
-      color: #fff;
+      color: #000;
     }
 
     input:-moz-placeholder {
       /* Firefox 18- */
-      color: #fff;
+      color: #000;
     }
 
     button {
-      background: #c337ee;
+      background: #60d2d9;
       display: inline-block;
       font-size: 18px;
       text-transform: uppercase;
-      color: #fff;
+      color: #000;
       outline: none;
       height: 55px;
       padding: 0 30px;
       border-radius: 5px;
       margin-left: 15px;
       font-weight: 500;
-      border: 2px solid #c337ee;
+      border: 2px solid #fff;
 
       @media (max-width: 767px) {
         margin-left: 0;
@@ -2148,6 +2105,29 @@ body {
 
 footer {
   padding: 15px 0;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 99;
+  }
+
+  &::before {
+    content: '';
+    background: url('../images/footer-bg.png') no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.05;
+
+    @media (max-width: 767px) {
+      background-size: 100%;
+      background-position: 100% 100%;
+    }
+  }
 
   .footSocial {
     position: relative;
@@ -2186,6 +2166,10 @@ footer {
         img {
           width: 100%;
           max-width: 65px;
+
+          @media (max-width: 767px) {
+            max-width: 50px;
+          }
         }
       }
     }
@@ -2208,6 +2192,10 @@ footer {
       margin: 0 25px;
       font-size: 18px;
 
+      &:hover {
+        color: #60d2d9;
+      }
+
       @media (max-width: 767px) {
         font-size: 14px;
         margin: 0 15px;
@@ -2222,12 +2210,27 @@ footer {
 }
 
 .o-scroll {
-  background-color: #0a0a0a !important;
+  background-color: #211139 !important;
 }
 
 .exploreThe-appmain {
-  padding: 80px 0;
+  padding: 60px 0;
   position: relative;
+
+  .bg-2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    img {
+      width: 100%;
+      max-width: 120px;
+
+      @media (max-width: 767px) {
+        max-width: 70px;
+      }
+    }
+  }
 
   .explore-bg-box {
     width: 100%;
@@ -2255,12 +2258,6 @@ footer {
     margin: auto;
   }
 
-  .exploreAppSlide {
-    @media (min-width: 992px) {
-      margin-bottom: 180px;
-    }
-  }
-
   .exploreApp-img {
     .exploreAppSlide {
       .exploreSlide-item {
@@ -2277,9 +2274,16 @@ footer {
       .slick-prev {
         outline: none;
         z-index: 999;
+        left: -47%;
+        top: 12%;
 
-        @media (max-width: 767px) {
-          left: 18px;
+        @media (max-width: 991px) {
+          top: 50%;
+          left: -50px;
+
+          @media (max-width: 767px) {
+            left: 18px;
+          }
         }
 
         &::before {
@@ -2287,6 +2291,7 @@ footer {
           background: url('../images/arrow-prev.png') no-repeat;
           padding: 13px 31px;
           background-size: 60px;
+          opacity: 1;
 
           @media (max-width: 767px) {
             background-size: 40px;
@@ -2296,11 +2301,18 @@ footer {
 
       .slick-next {
         outline: none;
-        right: 25px;
+        right: -16%;
         z-index: 999;
+        opacity: 1;
+        top: -10px;
 
-        @media (max-width: 767px) {
-          right: 40px;
+        @media (max-width: 991px) {
+          top: 50%;
+          right: 0;
+
+          @media (max-width: 767px) {
+            right: 40px;
+          }
         }
 
         &::before {
@@ -2308,6 +2320,7 @@ footer {
           background: url('../images/arrow-next-2.png') no-repeat;
           padding: 13px 31px;
           background-size: 60px;
+          opacity: 1;
 
           @media (max-width: 767px) {
             background-size: 40px;
@@ -2371,6 +2384,7 @@ footer {
 
     @media (max-width: 991px) {
       line-height: 5.5rem;
+      font-size: 94px;
     }
 
     span {
@@ -2381,9 +2395,8 @@ footer {
 }
 
 .flash-img {
-  mix-blend-mode: screen;
   width: 100px !important;
-  top: 58%;
+  top: 55%;
   left: 2.3%;
   transform: translate(-50%, -50%) scale(0);
 
@@ -2403,13 +2416,13 @@ footer {
   }
 
   &-2 {
-    top: 67.9%;
+    top: 65%;
     left: 52.3%;
     animation-delay: 1.5s !important;
 
     @media (min-width: 768px) {
-      top: 9.2%;
-      left: 65.8%;
+      top: 11.2%;
+      left: 67.8%;
     }
 
     @media (min-width: 992px) {
@@ -2418,8 +2431,8 @@ footer {
     }
 
     @media (min-width: 1200px) {
-      top: 21%;
-      left: 72.3%;
+      top: 23%;
+      left: 74.5%;
     }
   }
 }
@@ -2448,8 +2461,9 @@ footer {
 
 .note {
   font-size: 11px;
-  color: #8e8e8e;
+  color: #fff;
   text-align: center;
+  padding: 0 15px;
 }
 
 .tokenslider {
