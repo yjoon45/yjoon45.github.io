@@ -94,13 +94,32 @@ $(function () {
   });
 });
 
+let locoScroll = null;
+
+function observeLastElm() {
+  const callback = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        locoScroll.update();
+        observer.disconnect();
+      }
+    });
+  };
+
+  let observer = new IntersectionObserver(callback);
+
+  observer.observe(document.querySelector('.bigTitle'));
+}
+
 document.addEventListener('readystatechange', function () {
   if (document.readyState === 'complete') {
     setTimeout(() => {
-      new LocomotiveScroll({
+      locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
       });
     }, 1000);
+
+    observeLastElm();
   }
 });
