@@ -13555,7 +13555,7 @@ body {
     position: absolute;
     right: 20px;
     top: 10px;
-    z-index: 9999;
+    z-index: 99;
   }
   .banner .mobilNav button {
     display: inline-block;
@@ -13588,7 +13588,7 @@ body {
     display: block;
     position: absolute;
     bottom: 0;
-    z-index: 999;
+    z-index: 99;
     left: 0;
     right: 0;
   }
@@ -13600,7 +13600,7 @@ body {
 }
 .banner .wh-navbar {
   position: absolute;
-  z-index: 99999;
+  z-index: 99;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13643,7 +13643,7 @@ body {
     left: -100%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    z-index: 99999;
+    z-index: 99;
     right: inherit;
     height: 100vh;
     display: block;
@@ -13719,7 +13719,7 @@ body {
 .banner .banner-bg-1 {
   position: absolute;
   bottom: 0;
-  z-index: 999;
+  z-index: 99;
   width: 100%;
 }
 @media (max-width: 767px) {
@@ -13765,7 +13765,7 @@ body {
   position: absolute;
   bottom: -2px;
   width: 100%;
-  z-index: 9999;
+  z-index: 99;
 }
 @media (max-width: 767px) {
   .banner .banner-bg-3 {
@@ -13786,7 +13786,7 @@ body {
   transform: translate(-50%);
   bottom: 50px;
   border-radius: 10px;
-  z-index: 999;
+  z-index: 99;
 }
 @media (max-width: 991px) {
   .banner .bannerFigure {
@@ -13834,7 +13834,7 @@ body {
   display: inline-block;
   margin: 0 5px;
   position: relative;
-  z-index: 9999;
+  z-index: 99;
 }
 .banner .bannerFigure .appsCols a img {
   width: 100%;
@@ -15246,7 +15246,7 @@ body {
   max-width: 850px;
   margin: auto;
   position: relative;
-  z-index: 999;
+  z-index: 99;
 }
 @media (max-width: 991px) {
   .ourAdviser-main .container .ourAdviser-slide {
@@ -15853,7 +15853,7 @@ footer .foot-copyright {
 }
 .exploreThe-appmain .exploreApp-img .exploreAppSlide .slick-prev {
   outline: none;
-  z-index: 999;
+  z-index: 99;
   left: -47%;
   top: 12%;
 }
@@ -15883,7 +15883,7 @@ footer .foot-copyright {
 .exploreThe-appmain .exploreApp-img .exploreAppSlide .slick-next {
   outline: none;
   right: -16%;
-  z-index: 999;
+  z-index: 99;
   opacity: 1;
   top: -10px;
 }
@@ -16141,4 +16141,29 @@ footer .foot-copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.wa-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #211139;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1090;
+  -webkit-transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+}
+.wa-loader.is-hide {
+  opacity: 0;
+  visibility: hidden;
 }
