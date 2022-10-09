@@ -2406,7 +2406,7 @@ body {
 }
 @media (max-width: 767px) {
   .suscribeMain::after {
-    background-size: 100% 70%;
+    background-size: 100%;
     background-position: 100%;
     height: 200px;
   }
