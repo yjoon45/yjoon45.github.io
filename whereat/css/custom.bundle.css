@@ -2318,17 +2318,17 @@ body {
   }
 }
 .roadMap-main .roadMap-cols .roadMap-detail.item-2 {
-  left: 100%;
-  top: 19px;
+  left: 91%;
+  top: 12px;
   text-align: left;
 }
 .roadMap-main .roadMap-cols .roadMap-detail.item-3 {
-  bottom: -107px;
-  left: 73.7%;
+  bottom: -130px;
+  left: 75.7%;
 }
 .roadMap-main .roadMap-cols .roadMap-detail.item-4 {
-  left: -4%;
-  bottom: -165px;
+  left: 11%;
+  bottom: -186px;
 }
 @media (min-width: 1200px) {
   .roadMap-main .roadMap-cols .roadMap-detail.item-4 {
@@ -2336,8 +2336,8 @@ body {
   }
 }
 .roadMap-main .roadMap-cols .roadMap-detail.item-5 {
-  left: -19%;
-  top: 174px;
+  left: -15%;
+  top: 154px;
 }
 @media (min-width: 1200px) {
   .roadMap-main .roadMap-cols .roadMap-detail.item-5 {
